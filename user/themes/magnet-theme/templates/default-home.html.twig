@@ -1,0 +1,19 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+    {#{% include 'partials/mosaic.html.twig' %}#}
+    {{ page.content }}
+    {#{% include 'partials/carousel.html.twig' %}#}
+    {#{% include 'partials/carousel-slick.html.twig' with {'ort': 'Japan'} %}#}
+    <div class="container mosaic-header">
+        <h2 class="mosaic-title">{{ page.header.homeTitle }}</h2>
+        <p class="mosaic-subtitle">{{ page.header.homeSubtitle }}</p>
+    </div>
+    {% include 'partials/bootstrap-moasic.html.twig' %}
+    
+    {# {% include 'partials/show-all-image-sliders.html.twig' %} #}
+
+    {#{% include 'partials/carousel-slick.html.twig' with {'ort': 'Japan'} %}#}
+    {#{% include 'partials/carousel-slick.html.twig' with {'ort': 'Japan'} %}#}
+    {#{% include 'partials/carousel-slick.html.twig' with {'ort': 'Japan'} %}#}
+{% endblock %}

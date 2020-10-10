@@ -1,0 +1,6 @@
+---
+title: Kunming
+media_order: 'China Kunming Walter Magnet (1).jpg,China Kunming Walter Magnet (2).jpg,China Kunming Walter Magnet (4).jpg,China Kunming Walter Magnet (5).jpg,China Kunming Walter Magnet (6).jpg,China Kunming Walter Magnet (8).jpg,China Kunming Walter Magnet (10).jpg,China Kunming Walter Magnet (11).jpg,China Kunming Walter Magnet (12).jpg,China Kunming Walter Magnet (13).jpg,China Kunming Walter Magnet (14).jpg,China Kunming Walter Magnet (15).jpg,China Kunming Walter Magnet (16).jpg,China Kunming Walter Magnet (17).jpg,China Kunming Walter Magnet (18).jpg,China Kunming Walter Magnet (19).jpg,China Kunming Walter Magnet (20).jpg,China Kunming Walter Magnet (21).jpg,China Kunming Walter Magnet (22).jpg,China Kunming Walter Magnet (23).jpg,China Kunming Walter Magnet (24).jpg,China Kunming Walter Magnet (25).jpg,China Kunming Walter Magnet (26).jpg,China Kunming Walter Magnet (27).jpg,China Kunming Walter Magnet (29).jpg,China Kunming Walter Magnet (30).jpg,China Kunming Walter Magnet (31).jpg,China Kunming Walter Magnet (32).jpg,China Kunming Walter Magnet (33).jpg,China Kunming Walter Magnet (34).jpg,China Kunming Walter Magnet (35).jpg,China Kunming Walter Magnet (36).jpg,China Kunming Walter Magnet (37).jpg,China Kunming Walter Magnet (38).jpg,China Kunming Walter Magnet (39).jpg'
+routable: true
+---
+

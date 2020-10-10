@@ -1,0 +1,14 @@
+<script>
+    $(window).scroll(function () {
+        if ($(window).scrollTop() >= $('#body').position().top) {
+            $('#header-move').addClass('fixed-header');
+            $('nav div').addClass('visible-title');
+            $('#header-move').removeClass('hidden');
+        }
+        else {
+            $('#header-move').removeClass('fixed-header');
+            $('#header-move').addClass('hidden');
+            $('nav div').removeClass('visible-title');
+        }
+    });
+</script>

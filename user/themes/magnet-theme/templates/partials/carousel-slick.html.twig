@@ -1,0 +1,14 @@
+<section style="background-color: rgba(208,205,209,0.5); padding-top: 20px; padding-bottom: 20px">
+    <div class="container">
+        <span class="badge badge-pill badge-third slick-title"><h5>{{ ort }}</h5></span>
+        <div class="slick-responsive">
+            {% for image in page.media.images %}
+                <div class="slick-item">
+                    {{ image.html }}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+

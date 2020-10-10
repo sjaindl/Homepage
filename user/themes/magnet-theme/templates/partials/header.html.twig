@@ -1,0 +1,93 @@
+{#
+<div class="container social-media-responsive" style="position: absolute; right: 30px; padding: 20px">
+    <ul class="list-unstyled list-inline social text-right">
+        <li class="list-inline-item"><a class="circle facebook" href="javascript:void();"><i
+                        class="fa fa-facebook"></i></a>
+        </li>
+        <li class="list-inline-item"><a class="circle instagram" href="javascript:void();"><i
+                        class="fa fa-instagram"></i></a>
+        </li>
+    </ul>
+</div>
+#}
+
+{#TODO IF ELSE #}
+{% set headerImage = '{{ config.site.metadata.abenteuerImage }}' %}
+{% set headerText = '{{ config.site.metadata.abenteuerHeader }}' %}
+{% set headerPageName = 'abenteuer' %}
+{% if page.header.header_id == 'home' %}
+    {% set headerImage = '{{ config.site.metadata.abenteuerImage }}' %}
+    {% set headerText = '{{ config.site.metadata.abenteuerHeader }}' %}
+    {% set headerPageName = 'abenteuer' %}
+{% elseif page.header.header_id == 'hochzeit' %}
+    {% set headerImage = '{{ config.site.metadata.hochzeitImage }}' %}
+    {% set headerText = '{{ config.site.metadata.hochzeitHeader }}' %}
+    {% set headerPageName = 'hochzeitsvideo' %}
+{% elseif page.header.header_id == 'zr' %}
+    {% set headerImage = '{{ config.site.metadata.zeitrafferImage }}' %}
+    {% set headerText = '{{ config.site.metadata.zeitrafferHeader }}' %}
+    {% set headerPageName = 'zeitraffer' %}
+{% endif %}
+
+<div id="intro"
+{% if page.header.header_id == 'hochzeit' %}
+     style="background: url('{{ url('theme://') }}/{{ config.site.metadata.hochzeitImage }}') no-repeat center center fixed; -webkit-background-size: cover;
+{% elseif page.header.header_id == 'zr' %}
+     style="background: url('{{ url('theme://') }}/{{ config.site.metadata.zeitrafferImage }}') no-repeat center center fixed; -webkit-background-size: cover;
+{% else %}
+     style="background: url('{{ url('theme://') }}/{{ config.site.metadata.abenteuerImage }}') no-repeat center center fixed; -webkit-background-size: cover;
+{% endif %}
+             -moz-background-size: cover;
+             -o-background-size: cover;
+             background-size: cover; ">
+    <div class="container align-items-center">
+        <div class="row d-flex justify-content-center text-center">
+            <div class="col-md-5 col-lg-4 margin-top-header">
+                <span class="badge badge-pill badge-primary"><h2>abenteuermagnet</h2></span>
+                <p class="header-banner"{% if page.header.header_id == 'hochzeit' %}style="color: #afafaf;"{% endif %}>
+                    {% if page.header.header_id == 'hochzeit' %}
+                        {{ config.site.metadata.hochzeitHeader }}
+                    {% elseif page.header.header_id == 'zr' %}
+                        {{ config.site.metadata.zeitrafferHeader }}
+                    {% else %}
+                        {{ config.site.metadata.abenteuerHeader }}
+                    {% endif %}
+                    
+                </p>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 mt-2 ">
+                        <ul class="list-unstyled list-inline social text-center">
+
+                            <li class="list-inline-item"><a
+                                        class="circle travel {% if page.header.header_id != 'hochzeit' and page.header.header_id != 'zr' %} travel-active {% endif %}"
+                                        href="{{ base_url_absolute }}" data-toggle="tooltip" data-placement="top"
+                                        title="abenteuer"><i
+                                            class="fas fa-plane"></i></a>
+                            </li>
+
+                            <li class="list-inline-item">
+                                <a class="circle weeding {% if page.header.header_id == 'hochzeit' %} weeding-active {% endif %}"
+                                   href="{{ base_url_absolute }}/hochzeitsvideos" data-toggle="tooltip" data-placement="top"
+                                   title="hochzeitvideos"><img class="rings-icon" src="http://www.abenteuermagnet.at/user/themes/magnet-theme/{{config.site.metadata.iconHochzeit}}"></a>
+                            </li>
+                            <li class="list-inline-item"><a
+                                        class="circle timelapse {% if page.header.header_id == 'zr' %} timelapse-active {% endif %}"
+                                        href="{{ base_url_absolute }}/zeitraffer" data-toggle="tooltip" data-placement="top"
+                                        title="zeitraffer"><i
+                                            class="fas fa-video"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <span class="badge badge-pill  {{ page.header.badge_class }}"><h4>{{ headerPageName }}</h4></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
+

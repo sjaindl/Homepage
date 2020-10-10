@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="{{ grav.language.getActive ?: theme_config.default_lang }}">
+<head>
+    {% block head %}
+        <meta charset="utf-8"/>
+        <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% include 'partials/metadata.html.twig' %}
+
+        <link rel="icon" type="image/png" href="{{ url('theme://images/logo.png') }}"/>
+        <link rel="canonical" href="{{ page.url(true, true) }}"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+              integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+              crossorigin="anonymous">
+
+        {#<link href="data:text/css;charset=utf-8," data-href="/docs/3.4/dist/css/bootstrap-theme.min.css"#}
+              {#rel="stylesheet" id="bs-theme-stylesheet">#}
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="jquery-mosaic/jquery.mosaic.css?v=8"/>
+        <script type="text/javascript" src="jquery-mosaic/jquery.mosaic.js?v=8"></script>
+
+        {% block stylesheets %}
+            {% do assets.addCss('https://unpkg.com/purecss@1.0.0/build/pure-min.css', 100) %}
+            {% do assets.addCss('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', 99) %}
+            {% do assets.addCss('theme://css/custom.css', 98) %}
+            {% do assets.addCss('theme://css/mdb.min.css', 99) %}
+            {% do assets.addCss('theme://css/slick.css', 96) %}
+            {% do assets.addCss('theme://css/slick-theme.css', 95) %}
+            {% do assets.addCss('theme://bootstrap-4.2.1/css/bootstrap.css', 98) %}
+        {% endblock %}
+        {{ assets.css() }}
+
+        {% block javascripts %}
+            {% do assets.addJs('jquery', 100) %}
+            {#{% do assets.addJs('theme://bootstrap-4.2.1/js/bootstrap.js', 100) %}#}
+            {% do assets.addJs('theme://bootstrap-4.2.1/js/bootstrap.bundle.js', 100) %}
+            {% do assets.addJs('theme://js/slick.js', 99) %}
+        {% endblock %}
+        {{ assets.js() }}
+
+    {% endblock head %}
+</head>

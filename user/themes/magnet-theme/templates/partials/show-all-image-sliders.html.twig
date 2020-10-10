@@ -1,0 +1,61 @@
+<section style="background-color: rgba(208,205,209,0.5); padding-top: 40px; padding-bottom: 30px">
+    <div class="slick-carousel-header">
+        <span class="badge badge-pill badge-third slick-title center-responsive"><h5>{{ page.title }}</h5></span>
+    </div>
+    <div class="container" id="{{ p.title|camelize }}">
+        {#<span class="badge badge-pill badge-third slick-title">{{ p.title }}</span>#}
+        <div class="slick-responsive">
+            {% for image in page.media.images %}
+                <div class="slick-item">
+                    {{ image.quality(40).html }}
+                    <div style="text-align: center;"> {{ image.meta.title }} </div>
+                </div>
+                
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% set parentPage = '/home/' ~ page.title|lower %}
+
+{% for p in page.find(parentPage).children %}
+    {# {% if not p.routable %} #}
+        {% if (loop.index0 % 2) == 0 %}
+            <section style="background-color: rgba(208,205,209,0.5); padding-top: 40px; padding-bottom: 30px">
+                <div class="slick-carousel-header">
+                    <span class="badge badge-pill badge-third slick-title center-responsive"><h5>{{ p.title }}</h5></span>
+                </div>
+                <div class="container" id="{{ p.title|camelize }}">
+                    {#<span class="badge badge-pill badge-third slick-title">{{ p.title }}</span>#}
+                    <div class="slick-responsive">
+                        {% for image in p.media.images %}
+                            <div class="slick-item">
+                                {{ image.quality(40).html }}
+                                <div style="text-align: center;"> {{ image.meta.title }} </div>
+                            </div>
+                            
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+        {% else %}
+            <section style="background-color: rgba(208,205,209,0.1); padding-top: 40px; padding-bottom: 30px">
+                <div class="slick-carousel-header">
+                    <span class="badge badge-pill badge-third slick-title center-responsive"><h5>{{ p.title }}</h5></span>
+                </div>
+                <div class="container" id="{{ p.title|camelize }}">
+                    {#<span class="badge badge-pill badge-third slick-title">{{ p.title }}</span>#}
+                    <div class="slick-responsive">
+                        {% for image in p.media.images %}
+                            <div class="slick-item">
+                                {{ image.quality(40).html }}
+                                <div style="text-align: center;"> {{ image.meta.title }} </div>
+                            </div>
+                            
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+        {% endif %}
+    {# {% endif %} #}
+{% endfor %}

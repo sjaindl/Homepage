@@ -1,0 +1,31 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+    {#{% include 'partials/mosaic.html.twig' %}#}
+    
+    {#{% include 'partials/carousel.html.twig' %}#}
+    {#{% include 'partials/carousel-slick.html.twig' with {'ort': 'Japan'} %}#}
+    <div class="container mosaic-header">
+        <h2 class="mosaic-title">{{ page.header.homeTitle }}</h2>
+        <p class="mosaic-subtitle">{{ page.header.homeSubtitle }}</p>
+        <h1 id="pageTop" style="text-align: center;">{{ page.title }}</h1>
+        <h4 style="text-align: center;">{{ page.content }}</h4>
+    </div>
+
+    {# {% include 'partials/bootstrap-moasic.html.twig' %} #}
+    {% include 'partials/show-all-image-sliders.html.twig' %}
+    {# {% include 'partials/carousel-slick.html.twig' with {'ort': 'Japan'} %} #}
+    {#{% include 'partials/carousel-slick.html.twig' with {'ort': 'Japan'} %}#}
+    {#{% include 'partials/carousel-slick.html.twig' with {'ort': 'Japan'} %}#}
+
+    
+<script>
+    $(function() {
+        $('html, body').animate({
+            scrollTop: $("#pageTop").offset().top - 80
+        }, 1000);
+    });
+</script>
+
+
+{% endblock %}

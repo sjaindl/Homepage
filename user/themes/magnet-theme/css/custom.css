@@ -1,0 +1,744 @@
+/* Core Stuff */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #606d6e;
+    position: relative !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #454B4D;
+}
+
+pre {
+    background: #F0F0F0;
+    margin: 1rem 0;
+    border-radius: 2px;
+}
+
+blockquote {
+    border-left: 10px solid #eee;
+    margin: 0;
+    padding: 0 2rem;
+}
+
+/* Menu Settings */
+.main-nav ul {
+    text-align: center;
+    letter-spacing: -1em;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav ul li {
+    display: inline-block;
+    letter-spacing: normal;
+}
+
+.main-nav ul li a {
+    position: relative;
+    display: block;
+    line-height: 45px;
+    color: #fff;
+    padding: 0 20px;
+    white-space: nowrap;
+}
+
+.main-nav > ul > li > a {
+    border-radius: 2px;
+}
+
+/*Active dropdown nav item */
+.main-nav ul li:hover > a {
+    background-color: #175E91;
+}
+
+/* Selected Dropdown nav item */
+.main-nav ul li.selected > a {
+    background-color: #fff;
+    color: #175E91;
+}
+
+/* Dropdown CSS */
+.main-nav ul li {
+    position: relative;
+}
+
+.main-nav ul li ul {
+    position: absolute;
+    background-color: #1F8DD6;
+    min-width: 100%;
+    text-align: left;
+    z-index: 20;
+
+    display: none;
+}
+
+.main-nav ul li ul li {
+    display: block;
+}
+
+/* Dropdown CSS */
+.main-nav ul li ul ul {
+    left: 100%;
+    top: 0;
+}
+
+/* Active on Hover */
+.main-nav li:hover > ul {
+    display: block;
+}
+
+/* Child Indicator */
+.main-nav .has-children > a {
+    padding-right: 30px;
+}
+
+.main-nav .has-children > a:after {
+    font-family: FontAwesome;
+    content: '\f107';
+    position: absolute;
+    display: inline-block;
+    right: 8px;
+    top: 0;
+}
+
+.main-nav .has-children .has-children > a:after {
+    content: '\f105';
+}
+
+/*---------------------------------------------------*/
+/*Footer CSS*/
+/*---------------------------------------------------*/
+
+section .section-title {
+    text-align: center;
+    color: #0c5460;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.footer-above {
+    padding-top: 15px;
+    background: rgba(65, 138, 157, 0.67) !important;
+}
+
+.footer-above h5 {
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color: #0c5460;
+}
+
+.footer-above a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+.footer-above ul.quick-links li {
+    color: #0c5460;
+}
+
+.footer-above ul.quick-links a {
+    color: #0c5460;
+}
+
+.footer-above ul.quick-links li a:hover {
+    transition: .5s all ease;
+    font-weight: 700;
+}
+
+.footer-above ul.quick-links li a i {
+    margin-right: 5px;
+}
+
+.footer-above ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+.footer-below {
+    background: #07657b !important;
+    padding-bottom: 10px;
+}
+
+.footer-below ul.social li {
+    padding: 3px 0;
+}
+
+.footer-below ul.social li a i {
+    font-size: 25px;
+}
+
+.footer-below ul.social li a,
+.footer-below ul.social li a:hover {
+    color: #fff;
+}
+
+.circle {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff !important;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 27px;
+}
+
+.circle-items {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+    color: #fff !important;
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    /*font-weight: normal;*/
+    line-height: 2em;
+    border-radius: 27px;
+}
+
+.circle-move {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff !important;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 27px;
+}
+
+.hr-move {
+    margin-top: -10px;
+    margin-bottom: 5px;
+}
+
+.facebook {
+    background-color: #0c5460 !important;
+}
+
+.facebook:hover {
+    background-color: #3B5998 !important;
+    transition: .5s all ease !important;
+    color: white !important;
+}
+
+.instagram {
+    background-color: #0c5460 !important;
+}
+
+.instagram:hover {
+    background-color: #8a3ab9 !important;
+    transition: .5s all ease !important;
+    color: white !important;
+}
+
+.weeding {
+    background-color: #0c5460;
+}
+
+.weeding-active {
+    background-color: rgba(176, 31, 63, 0.81) !important;
+}
+
+.weeding:hover {
+    background-color: #b01f3f !important;
+    transition: .5s all ease !important;
+    color: white !important;
+}
+
+.travel {
+    background-color: #0c5460;
+}
+
+.travel-active {
+    background-color: rgba(16, 160, 176, 0.85) !important;
+}
+
+.travel:hover {
+    background-color: rgb(16, 160, 176) !important;
+    transition: .5s all ease !important;
+    color: white !important;
+}
+
+.timelapse {
+    background-color: #0c5460;
+}
+
+.timelapse-active {
+    background-color: rgba(19, 125, 58, 0.85) !important;
+}
+
+.timelapse:hover {
+    background-color: rgb(19, 125, 58) !important;
+    transition: .5s all ease !important;
+    color: white !important;
+}
+
+.badge-color-travel {
+    background-color: rgba(16, 160, 176, 0.85) !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.badge-color-weeding {
+    background-color: rgba(176, 31, 63, 0.81) !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.badge-color-zeitraffer {
+    background-color: rgba(19, 125, 58, 0.85) !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.selected {
+    background-color: rgba(59, 89, 152, 0.87) !important;
+}
+
+@media (max-width: 767px) {
+    .footer-above h5 {
+        padding-left: 0;
+        border-left: transparent;
+        padding-bottom: 0px;
+        margin-bottom: 10px;
+    }
+}
+
+/*---------------------------------------------------*/
+/*Header-mask CSS*/
+/*---------------------------------------------------*/
+html,
+body,
+header,
+#intro {
+    height: 100%;
+}
+
+.margin-top-header {
+    margin-top: 15%;
+}
+
+.badge-primary {
+    background-color: rgba(189, 186, 190, 0.52) !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.badge-secondary {
+    background-color: rgba(17, 107, 145, 0.68) !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.header-banner {
+    margin-top: 20px;
+    color: #fff;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation: smoothScroll 1s forwards;
+}
+
+@keyframes smoothScroll {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*---------------------------------------------------*/
+/*Mosaic and Masonry CSS*/
+/*---------------------------------------------------*/
+.mosaic-header {
+    padding: 60px 0px 40px 0px;
+}
+
+.mosaic-title {
+    text-align: center;
+}
+
+.mosaic-subtitle {
+    text-align: center;
+}
+
+.mosaic-container {
+    width: 70% !important;
+    padding-bottom: 60px;
+}
+
+@media (max-width: 992px) {
+    .mosaic-container {
+        width: 90% !important;
+        padding-bottom: 60px;
+    }
+}
+
+/*---------------------------------------------------*/
+/*Carousel CSS*/
+/*---------------------------------------------------*/
+.slick-carousel-header {
+    text-align: center;
+}
+
+.carousel {
+    width: 100%;
+}
+
+.slide-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.slide-box img {
+    padding-left: 10px;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .slide-box img {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .slide-box img {
+        -ms-flex: 0 0 33.3333%;
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+    }
+}
+
+@media (min-width: 992px) {
+    .slide-box img {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 200px;
+    border-radius: 2rem;
+}
+
+/*---------------------------------------------------*/
+/*Slick-Carousel CSS*/
+/*---------------------------------------------------*/
+.slick-item {
+    margin-left: 10px !important;
+}
+
+.slick-slide img {
+    height: auto;
+    max-height: 220px;
+}
+
+.slick-title {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.badge-third {
+    background-color: #0c5460;
+    color: white;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.row-test {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 5px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column-test {
+    -ms-flex: 33%; /* IE10 */
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 5px;
+}
+
+.column-test img {
+    /*margin-top: 8px;*/
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column-test {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column-test {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+.overlay {
+    margin-top: 8px;
+    opacity: 1 !important;
+    z-index: 100;
+}
+
+.mask {
+    opacity: 1 !important;
+    z-index: 100;
+}
+
+.overlay:hover {
+    cursor: pointer;
+    background-color: rgba(35, 127, 122, 0.5) !important;
+}
+
+.overlay:hover .testhoverDIV {
+    /*opacity: 0;*/
+    /*visibility: hidden;*/
+    /*-webkit-transition: opacity 600ms, visibility 600ms;*/
+    /*transition: opacity 600ms, visibility 600ms;*/
+    display: none;
+
+}
+
+.testHoverFA {
+    display: none;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+.overlay:hover .testHoverFA {
+    display: block;
+}
+
+.mask:hover {
+    background-color: rgba(35, 127, 122, 0.64) !important;
+}
+
+.mosaic-text {
+    padding: 15pt;
+    color: #fff;
+}
+
+/*---------------------------------------------------*/
+/*scrollTopArrow CSS*/
+/*---------------------------------------------------*/
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+/* Extra Things */
+body {
+    background: #eee;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h3 i {
+    color: #444;
+}
+
+/*---------------------------------------------------*/
+/*Linkbar Wedding CSS*/
+/*---------------------------------------------------*/
+.linkbar-wedding-section {
+    background-color: #f9f9f9;
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+}
+
+.linkbar-wedding-container {
+    width: 350px !important;
+    max-width: 100%;
+    background-color: #e8e8e8;
+    padding-bottom: 60px !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+
+@media screen and (max-width: 786px) {
+    .linkbar-wedding-container {
+        width: 350px !important;
+        max-width: 100%;
+        background-color: #e8e8e8;
+        padding-bottom: 60px !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+}
+
+.linkbar-wedding-container ul {
+    padding-top: 20px;
+}
+
+.linkbar-wedding-container ul li {
+    background-color: #e8e8e8;
+}
+
+.linkbar-wedding {
+    margin-left: 10px;
+}
+
+.linkbar-wedding-a {
+    color: #000;
+}
+
+.push-down-on-phone {
+    paddin-top: 20px;
+
+}
+
+@media screen and (max-width: 400px) {
+    .margin-top-header {
+        margin-top: 30%;
+    }
+
+    /*.social-media-responsive{*/
+    /*right: 0!important;*/
+    /*display: none !important;*/
+    /*}*/
+    /*.social-media-responsive ul {*/
+    /*text-align: center !important;*/
+    /*}*/
+    .social-media-responsive {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 768px) and (min-width: 401px) {
+    .social-media-responsive {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hidden-smaller {
+        display: none !important;
+    }
+
+    .hidden-bigger {
+        display: inline-block !important;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .hidden-smaller {
+        display: inline-block !important;
+    }
+
+    .hidden-bigger {
+        display: none !important;
+    }
+}
+
+.center-responsive {
+    margin-left: 0 !important;
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .margin-top-header {
+        margin-top: 10%;
+    }
+}
+
+.rings-icon {
+    width: 60%;
+    height: auto;
+    margin-bottom: 5px;
+}
+

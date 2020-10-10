@@ -1,0 +1,85 @@
+{#{% for p in pages.children %}#}
+    {#{% for pp in p.children %}#}
+        {#{% if not pp.routable %}#}
+            {#{% if (loop.index0 % 2) == 0 %}#}
+                {#<section style="background-color: rgba(208,205,209,0.5); padding-top: 40px; padding-bottom: 30px">#}
+                    {#<div class="slick-carousel-header">#}
+                        {#<span class="badge badge-pill badge-third slick-title"><h3>{{ pp.title }}</h3></span>#}
+                    {#</div>#}
+                    {#<div class="container" id="{{ pp.title }}">#}
+                        {#<span class="badge badge-pill badge-third slick-title"><h5>{{ pp.title }}</h5></span>#}
+                        {#<div class="slick-responsive">#}
+                            {#{% for image in pp.media.images %}#}
+                                {#<div class="slick-item">#}
+                                    {#{{ image.html }}#}
+                                {#</div>#}
+                            {#{% endfor %}#}
+                        {#</div>#}
+                    {#</div>#}
+                {#</section>#}
+            {#{% else %}#}
+                {#<section style="background-color: rgba(208,205,209,0.1); padding-top: 40px; padding-bottom: 30px">#}
+                    {#<div class="slick-carousel-header">#}
+                        {#<span class="badge badge-pill badge-third slick-title"><h3>{{ pp.title }}</h3></span>#}
+                    {#</div>#}
+                    {#<div class="container" id="{{ pp.title }}">#}
+                        {#<span class="badge badge-pill badge-third slick-title"><h5>{{ pp.title }}</h5></span>#}
+                        {#<div class="slick-responsive">#}
+                            {#{% for image in pp.media.images %}#}
+                                {#<div class="slick-item">#}
+                                    {#{{ image.html }}#}
+                                {#</div>#}
+                            {#{% endfor %}#}
+                        {#</div>#}
+                    {#</div>#}
+                {#</section>#}
+            {#{% endif %}#}
+        {#{% endif %}#}
+    {#{% endfor %}#}
+{#{% endfor %}#}
+
+<section style="background-color: rgba(208,205,209,0.5); padding-top: 40px; padding-bottom: 30px;">
+    <div class="container">
+
+        {% set count = 0 %}
+        {% for elem in page.header.youtube %}
+            {% set count = count + 1 %}
+        {% endfor %}
+
+        {% set autoplayStarted = false %}
+
+        {% for index in range(0, count) %}
+
+            {% if index % page.header.videosPerSlider == 0 %}
+
+                    <div class="slick-responsive">
+                        {% set videoCounter = 0 %}
+                        {% for elem in page.header.youtube %}
+
+                            {% if videoCounter >= index and videoCounter <= index + (page.header.videosPerSlider - 1) %}
+                                {% set a = elem|split('=') %}
+                                <div class="slick-item">
+                                    {% if autoplayStarted == false %}                                         
+                                        <!-- multi autoplay issue.. <iframe width="420" height="315" src="https://www.youtube.com/embed/{{ a.1 }}?autoplay=1" frameborder="0" allowfullscreen allow='autoplay'> -->
+                                        <iframe width="420" height="315" src="https://www.youtube.com/embed/{{ a.1 }}" frameborder="0" allowfullscreen>
+                                        </iframe>
+                                        {% set autoplayStarted = true %}
+                                    {% else %} 
+                                        <iframe width="420" height="315" src="https://www.youtube.com/embed/{{ a.1 }}" frameborder="0" allowfullscreen>
+                                        </iframe>
+                                    {% endif %}
+                                </div>
+                            {% endif %}
+
+                            {% set videoCounter = videoCounter + 1 %}
+
+                        {% endfor %} 
+                    </div>
+            
+            {% endif %}
+
+        {% endfor %}
+
+    </div>
+
+</section>

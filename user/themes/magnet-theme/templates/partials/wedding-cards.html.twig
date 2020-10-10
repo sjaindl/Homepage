@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="row">
+    {% for p in page.find('/hochzeitsvideos').children if p != page %}
+            {% if not p.routable %}
+                {% set help = 0 %}
+                <div class="col-sm-12 col-md-6" style="margin-bottom: 30px">
+                    <div class="card">
+                        {% set image = 'cover.jpeg' %}
+                        {% if p.media['cover.jpeg'] is not null %}
+                            {% set image = 'cover.jpeg' %}
+                        {% elseif p.media['cover.JPEG'] is not null %}
+                            {% set image = 'cover.JPEG' %}
+                        {% elseif p.media['cover.jpg'] is not null %}
+                            {% set image = 'cover.jpg' %}
+                        {% elseif p.media['cover.JPG'] is not null %}
+                            {% set image = 'cover.JPG' %}
+                        {% elseif p.media['cover.png'] is not null %}
+                            {% set image = 'cover.png' %}
+                        {% elseif p.media['cover.PNG'] is not null %}
+                            {% set image = 'cover.PNG' %}
+                        {% endif %}
+                        <img class="card-img-top"
+                             src="{{ p.media[image].url }}"
+                             alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ p.title }}</h5>
+                            {#<p>{{ p.content|split('<h1>')[0]|split('</h1>')[0] }}</p>#}
+                            {{ p.content }}
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            {#{% set precondition = true %}#}
+                            {#{% for item in 1..20 if precondition %}#}
+                                {#{% if p.content|split('<li>')[item+1]|split('</li>')[0] == '' %}#}
+                                    {#{% set precondition = false %}#}
+                                    {#{% set help = item %}#}
+                                {#{% else %}#}
+                                    {#<li class="list-group-item">{{ p.content|split('<li>')[item]|split('</li>')[0] }}</li>#}
+                                {#{% endif %}#}
+                            {#{% endfor %}#}
+                        </ul>
+                        <div class="card-footer text-muted">
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+    {% endfor %}
+    </div>
+</div>

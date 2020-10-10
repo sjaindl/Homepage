@@ -1,0 +1,133 @@
+<div class="container mosaic-container">
+    <div class="row-test">
+        <div class="column-test">
+            {% for p in pages.children %}
+                {% for pp in p.children %}
+                    {% if (loop.index0 % 3) == 0 %}
+                        <a href="/home/{{ pp.title|lower|url_encode }}">
+                            <div class="view overlay">
+                                {% if pp.media['mosaic.jpeg'] is not null %}
+                                    {{ pp.media['mosaic.jpeg'].quality(25).html }}
+                                {% elseif pp.media['mosaic.JPEG'] is not null %}
+                                    {{ pp.media['mosaic.JPEG'].quality(25).html }}
+                                {% elseif pp.media['mosaic.jpg'] is not null %}
+                                    {{ pp.media['mosaic.jpg'].quality(25).html }}
+                                {% elseif pp.media['mosaic.JPG'] is not null %}
+                                    {{ pp.media['mosaic.JPG'].quality(25).html }}
+                                {% elseif pp.media['mosaic.png'] is not null %}
+                                    {{ pp.media['mosaic.png'].quality(25).html }}
+                                {% elseif pp.media['mosaic.PNG'] is not null %}
+                                    {{ pp.media['mosaic.PNG'].quality(25).html }}
+                                {% endif %}
+                                <div class="mask flex-center ">
+                                    <p class="white-text">
+                                    <div class="mosaic-text testhoverDIV">
+                                    <span class="badge badge-pill badge-secondary">
+                                        <h5>{{ pp.title }}</h5>
+                                    </span>
+                                    </div>
+                                    <div class="testHoverFA">
+                                        <i class="fas fa-plus-circle fa-2x"></i><br>
+                                        <span>{{ pp.content|striptags }}</span>
+                                    </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    {% endif %}
+                {% endfor %}
+
+            {% endfor %}
+        </div>
+        <div class="column-test">
+            {% for p in pages.children %}
+                {% for pp in p.children %}
+                    {% if (loop.index0 % 3) == 1 %}
+                        <a href="/home/{{ pp.title|lower|url_encode }}">
+                        {# <a href="#{{ pp.title|camelize }}"> #}
+                            <div class="view overlay">
+                                {% if pp.media['mosaic.jpeg'] is not null %}
+                                    {{ pp.media['mosaic.jpeg'].html }}
+                                {% elseif pp.media['mosaic.JPEG'] is not null %}
+                                    {{ pp.media['mosaic.JPEG'].html }}
+                                {% elseif pp.media['mosaic.jpg'] is not null %}
+                                    {{ pp.media['mosaic.jpg'].html }}
+                                {% elseif pp.media['mosaic.JPG'] is not null %}
+                                    {{ pp.media['mosaic.JPG'].html }}
+                                {% elseif pp.media['mosaic.png'] is not null %}
+                                    {{ pp.media['mosaic.png'].html }}
+                                {% elseif pp.media['mosaic.PNG'] is not null %}
+                                    {{ pp.media['mosaic.PNG'].html }}
+                                {% endif %}
+                                <div class="mask flex-center ">
+                                    <p class="white-text">
+                                    <div class="mosaic-text testhoverDIV">
+                                    <span class="badge badge-pill badge-secondary">
+                                        <h5>{{ pp.title }}</h5>
+                                    </span>
+                                    </div>
+                                    <div class="testHoverFA">
+                                        <i class="fas fa-plus-circle fa-2x"></i><br>
+                                        <span>{{ pp.content|striptags }}</span>
+                                    </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+        </div>
+        <div class="column-test">
+            {% for p in pages.children %}
+                {% for pp in p.children %}
+                    {% if (loop.index0 % 3) == 2 %}
+                        <a href="/home/{{ pp.title|lower|url_encode }}">
+                        {# <a href="#{{ pp.title|camelize }}"> #}
+                            <div class=" view overlay">
+                                {% if pp.media['mosaic.jpeg'] is not null %}
+                                    {{ pp.media['mosaic.jpeg'].html }}
+                                {% elseif pp.media['mosaic.JPEG'] is not null %}
+                                    {{ pp.media['mosaic.JPEG'].html }}
+                                {% elseif pp.media['mosaic.jpg'] is not null %}
+                                    {{ pp.media['mosaic.jpg'].html }}
+                                {% elseif pp.media['mosaic.JPG'] is not null %}
+                                    {{ pp.media['mosaic.JPG'].html }}
+                                {% elseif pp.media['mosaic.png'] is not null %}
+                                    {{ pp.media['mosaic.png'].html }}
+                                {% elseif pp.media['mosaic.PNG'] is not null %}
+                                    {{ pp.media['mosaic.PNG'].html }}
+                                {% endif %}
+                                <div class="mask flex-center ">
+                                    <p class="white-text">
+                                    <div class="mosaic-text testhoverDIV">
+                                    <span class="badge badge-pill badge-secondary">
+                                        <h5>{{ pp.title }}</h5>
+                                    </span>
+                                    </div>
+                                    <div class="testHoverFA">
+                                        <i class="fas fa-plus-circle fa-2x"></i><br>
+                                        <span>{{ pp.content|striptags }}</span>
+                                    </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<br>
+
+<script>
+    $("a[href^='#']").click(function (e) {
+        e.preventDefault();
+        var position = $($(this).attr("href")).offset().top - 200;
+
+        $("body, html").animate({
+            scrollTop: position
+        } /* speed */);
+    });
+</script>
