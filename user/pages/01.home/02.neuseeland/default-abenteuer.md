@@ -1,0 +1,11 @@
+---
+title: Neuseeland
+routable: true
+admin:
+    children_display_order: collection
+body_classes: 'title-center title-h1h2'
+badge_class: badge-color-travel
+header_id: abenteuer
+---
+
+Land der Wolke

@@ -1,6 +1,6 @@
 ---
-title: Abenteuer
-media_order: 'co-china.jpeg,co-bali.jpeg,co-dubai.jpeg,co-thailand.jpeg,image1.jpeg,consulting-2045471_1920.jpg,slide-comp.jpeg'
+title: Reisen
+media_order: 'Dominikanische Republik.jpg,neuseeland.jpg'
 published: true
 body_classes: 'title-center title-h1h2'
 badge_class: badge-color-travel

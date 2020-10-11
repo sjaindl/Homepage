@@ -1,6 +1,0 @@
----
-title: 'Gyantse Tibet'
-media_order: 'China Tibet Gyantse Walter Magnet (1).jpg,China Tibet Gyantse Walter Magnet (2).jpg,China Tibet Gyantse Walter Magnet (3).jpg,China Tibet Gyantse Walter Magnet (4).jpg,China Tibet Gyantse Walter Magnet (5).jpg,China Tibet Gyantse Walter Magnet (6).jpg,China Tibet Gyantse Walter Magnet (7).jpg,China Tibet Gyantse Walter Magnet (8).jpg,China Tibet Gyantse Walter Magnet (9).jpg,China Tibet Gyantse Walter Magnet (10).jpg,China Tibet Gyantse Walter Magnet (11).jpg,China Tibet Gyantse Walter Magnet (12).jpg,China Tibet Gyantse Walter Magnet (13).jpg,China Tibet Gyantse Walter Magnet (14).jpg,China Tibet Gyantse Walter Magnet (15).jpg,China Tibet Gyantse Walter Magnet (16).jpg,China Tibet Gyantse Walter Magnet (17).jpg,China Tibet Gyantse Walter Magnet (18).jpg,China Tibet Gyantse Walter Magnet (19).jpg,China Tibet Gyantse Walter Magnet (20).jpg,China Tibet Gyantse Walter Magnet (21).jpg,China Tibet Gyantse Walter Magnet (22).jpg,China Tibet Gyantse Walter Magnet (23).jpg,China Tibet Gyantse Walter Magnet (24).jpg,China Tibet Gyantse Walter Magnet (25).jpg,China Tibet Gyantse Walter Magnet (26).jpg,China Tibet Gyantse Walter Magnet (27).jpg'
-routable: true
----
-
