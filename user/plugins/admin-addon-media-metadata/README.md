@@ -18,11 +18,33 @@ The Admin plugin has not been offering a feature like this yet. In order to add/
 1. hover any file in your Page Media section
 2. hit the small «i» button to open the metadata form *(the regular «i» button which just showed the metadata will be overwritten by the plugin)*
 
+### NOTE on setting “Auto metadata from Exif”
+
+If your system is set to automatically write EXIF metadata  
+`(system.yaml → media.auto_metadata_exif: true)`
+
+- On **Admin Plugin 1.10:**  
+Please **save the page** after uploading an image and **before** you write additional metadata using this plugin. On saving the page, the Admin Plugin will create the meta.yaml file including the EXIF data – but it won’t do so if a meta.yaml file already exists.
+- On **Admin Plugin 1.9** and **admin-addon-media-metadata >= 1.1.0:**  
+There’s no problem here: the EXIF data will be written immediately upon upload whereas this plugin now only writes or edits meta.yaml files when needed.
+
 ## Installation
 
-To install the plugin manually, download the ZIP version of this repository and unzip it under `/your/site/grav/user/plugins`. Then rename the folder to `admin-addon-media-metadata`. You can find these files on [GitHub](https://github.com/clivebeckett/grav-plugin-admin-addon-media-metadata).
+### Grav Package Manager (GPM)
 
-I will try and submit the plugin to the Grav repository for installation via Grav’s package manager or via the Admin plugin.
+If you can access your Grav installation via the command line, install the plugin by typing the following from your Grav root:
+
+```
+bin/gpm install admin-addon-media-metadata
+```
+
+### Admin Tool Web Interface
+
+In the **Plugins** section, hit the **[+ Add]** button, search for Admin Addon Media Metadata and install.
+
+### Manual Installation
+
+To install the plugin manually, download the ZIP version of the latest release of this repository and unzip it under `/your/site/grav/user/plugins`. Then rename the folder to `admin-addon-media-metadata`. You can find these files on [GitHub](https://github.com/clivebeckett/grav-plugin-admin-addon-media-metadata/releases).
 
 ## Configuration
 
@@ -35,19 +57,31 @@ and add more form fields to the form by updating the copy. E.g. if you want to a
   - type: text
     label: Web link
     name: weblink
+    placeholder: https://domain.tld/
 ```
 
 The URL field will be available in your metadata form and you’ll be able edit the information.
+
+### Additional Page Specific Metadata Fields (v1.1 and later)
+
+You may also add page specific fields to a page’s frontmatter. *Note: The fields will be added to the form, not override the ones from the above mentioned config files:*
+
+```
+admin-addon-media-metadata:
+  metadata_form:
+    fields:
+      -
+        type: text
+        label: 'Yet another field'
+        name: yetAnotherField
+        placeholder: 'yet yet yet'
+```
 
 ## Credits
 
 I have based the plugin on Dávid Szabó’s [Admin Addon Media Rename plugin](https://github.com/david-szabo97/grav-plugin-admin-addon-media-rename). Much of the code would not have been possible for me without Dávid’s work.
 
 [@renards](https://github.com/renards) helped a lot in replacing my original self-written Yaml parsing and writing code with Grav core technology and thus made version 1.0.0 possible.
-
-## ToDo
-
-- add the possibility for page-specific metadata forms
 
 ## Screenshots
 

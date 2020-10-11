@@ -75,9 +75,8 @@ class AdminAddonMediaMetadataPlugin extends Plugin
         $this->enable([
             'onTwigTemplatePaths' => ['onTwigTemplatePaths', 0],
             'onPagesInitialized' => ['onTwigExtensions', 0],
-            'onAdminAfterAddMedia' => ['createMetaYaml', 0],
+            //'onAdminAfterAddMedia' => ['createMetaYaml', 0], // removing the call of this method: see method below
             'onAdminTaskExecute' => ['editMetaDataFile', 0],
-//            'onAdminTaskExecute'  => ['editTest', 0],
         ]);
     }
 
@@ -95,9 +94,12 @@ class AdminAddonMediaMetadataPlugin extends Plugin
 
         /**
          * get metadata form field config from plugin admin-addon-media-metadata.yaml file
+         * or local override in user/config/plugins/admin-addon-media-metadata.yaml
+         * or from page frontmatter
          */
-        // TODO: optionally replace by local form definition file (in the current page folder)
-        $formFields = $this->config->get('plugins.admin-addon-media-metadata.metadata_form');
+        //$formFields = $this->config->get('plugins.admin-addon-media-metadata.metadata_form');
+        $config = $this->mergeConfig($page, true);
+        $formFields = $config->get('metadata_form');
 
         /**
          * list all needed data keys from the fields configuration
@@ -150,6 +152,10 @@ class AdminAddonMediaMetadataPlugin extends Plugin
         $this->outputError('blob');
     }
 
+    /**
+     * writes metadata into the [mediafile].meta.yaml file
+     * creates the .meta.yaml file if it does not yet exist
+     */
     public function editMetaDataFile($e)
     {
         $method = $e['method'];
@@ -161,9 +167,21 @@ class AdminAddonMediaMetadataPlugin extends Plugin
 
             $filePath = $basePath . $fileName;
 
-            if (!file_exists($filePath)) {
-                $this->outputError($this->grav['language']->translate(['PLUGIN_ADMIN_ADDON_MEDIA_METADATA.ERRORS.MEDIA_FILE_NOT_FOUND', $filePath]));
-            } else {
+/**
+ * temporarily removing the condition that checks for the media file to exist
+ * as in Admin plugin 1.10 a media file will be uploaded to a tmp folder first
+ * and moved to the page folder on saving the page
+ *
+ * there needs to be a better solution for this
+ *
+ * also: take care of system.yaml → media.auto_metadata_exif
+ *     if set to TRUE, a meta.yaml with EXIF data will be written, but only if the meta.yaml does not yet exist
+ *     in Admin 1.10 you need to save a page in order to have the meta.yaml file with EXIF data created
+ *     in Admin 1.9 this is not a problem since this plugin now (>=1.1.0) writes metadata only when needed
+ */
+//          if (!file_exists($filePath)) {
+//              $this->outputError($this->grav['language']->translate(['PLUGIN_ADMIN_ADDON_MEDIA_METADATA.ERRORS.MEDIA_FILE_NOT_FOUND', $filePath]));
+//          } else {
                 $metaDataFilePath = $filePath . '.meta.yaml';
 
                 /**
@@ -209,49 +227,59 @@ class AdminAddonMediaMetadataPlugin extends Plugin
                 $metaDataFile->save(Yaml::dump($storedMetaData));
 
                 //$this->outputError($newYamlText);
-            }
+//          }
         }
     }
 
+/**
+ * this method will not be called in Admin Plugin v1.10 (up until rc.11 anyway)
+ * additionally, writing the YAML file on upload will meddle with the system functionality
+ *     that writes exif data
+ *     in Admin Plugin v1.9 this functionality writes the meta.yaml file
+ *         on upload, this plugin will then just add the other metadata
+ *         when writing the meta.yaml file upon upload the system functionality will be overwritten
+ *     in Admin Plugin v1.10 you need to save the page before using this plugin on a file
+ *         if you want the exif data to be stored
+ */
     /**
      * creates an image.meta.yaml file
      * this file will be deleted by the core when deleting an image
      * will be called after a media file has been added (see onPluginsInitialized())
      */
-    public function createMetaYaml()
-    {
-        $fileName = $_FILES['file']['name'];
-
-        $pageObj = $this->grav['admin']->page();
-        $basePath = $pageObj->path() . DS;
-
-        $filePath = $basePath . $fileName;
-        if (!file_exists($filePath)) {
-            $this->outputError($this->grav['language']->translate(['PLUGIN_ADMIN_ADDON_MEDIA_METADATA.ERRORS.MEDIA_FILE_NOT_FOUND', $filePath]));
-        } else {
-            // TODO: do that only for image files?
-            $metaDataFileName = $fileName . '.meta.yaml';
-            $metaDataFilePath = $basePath . $metaDataFileName;
-            if (!file_exists($metaDataFilePath)) {
-                /**
-                 * get the list of form data from the fields configuration
-                 */
-                $arrMetaKeys = $this->editableFields();
-
-                $newMetaData = [];
-                foreach ($arrMetaKeys as $metaKey => $info) {
-                    $newMetaData[$metaKey] = '';
-                }
-
-                /**
-                 * Get an instance of the meta file and write the data to it
-                 * @see \Grav\Common\Page\Media
-                 */
-                $metaDataFile = File::instance($metaDataFilePath);
-                $metaDataFile->save(Yaml::dump($newMetaData));
-            }
-        }
-    }
+//    public function createMetaYaml()
+//    {
+//        $fileName = $_FILES['file']['name'];
+//
+//        $pageObj = $this->grav['admin']->page();
+//        $basePath = $pageObj->path() . DS;
+//
+//        $filePath = $basePath . $fileName;
+//        if (!file_exists($filePath)) {
+//            $this->outputError($this->grav['language']->translate(['PLUGIN_ADMIN_ADDON_MEDIA_METADATA.ERRORS.MEDIA_FILE_NOT_FOUND', $filePath]));
+//        } else {
+//            // TODO: do that only for image files?
+//            $metaDataFileName = $fileName . '.meta.yaml';
+//            $metaDataFilePath = $basePath . $metaDataFileName;
+//            if (!file_exists($metaDataFilePath)) {
+//                /**
+//                 * get the list of form data from the fields configuration
+//                 */
+//                $arrMetaKeys = $this->editableFields();
+//
+//                $newMetaData = [];
+//                foreach ($arrMetaKeys as $metaKey => $info) {
+//                    $newMetaData[$metaKey] = '';
+//                }
+//
+//                /**
+//                 * Get an instance of the meta file and write the data to it
+//                 * @see \Grav\Common\Page\Media
+//                 */
+//                $metaDataFile = File::instance($metaDataFilePath);
+//                $metaDataFile->save(Yaml::dump($newMetaData));
+//            }
+//        }
+//    }
 
     /**
      * return all editable fields from form configuration
@@ -259,11 +287,18 @@ class AdminAddonMediaMetadataPlugin extends Plugin
     private function editableFields($fieldsConf = null)
     {
         if ($fieldsConf === null) {
+            $page = $this->grav['admin']->page(true);
+            if (!$page) {
+                return;
+            }
             /**
              * get metadata form field config from plugin admin-addon-media-metadata.yaml file
+             * or local override in user/config/plugins/admin-addon-media-metadata.yaml
+             * or from page frontmatter
              */
-            // TODO: optionally replace by local form definition file (in the current page folder)
-            $formFields = $this->config->get('plugins.admin-addon-media-metadata.metadata_form');
+            //$formFields = $this->config->get('plugins.admin-addon-media-metadata.metadata_form');
+            $config = $this->mergeConfig($page, true);
+            $formFields = $config->get('metadata_form');
             $fieldsConf = $formFields['fields'];
         }
         $arrMetaKeys = [];

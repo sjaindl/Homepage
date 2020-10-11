@@ -1,10 +1,60 @@
+# v4.1.2
+## 10/07/2020
+
+1. [](#bugfix)
+    * Added some missing class attributes
+
+# v4.1.1
+## 09/01/2020
+
+1. [](#bugfix)
+    * Key field should not escape the value
+
+# v4.1.0
+## 07/29/2020
+
+1. [](#new)
+    * Support JSON based form submissions
+1. [](#improved)
+    * Improved handling of error messages with more details + translation [#428](https://github.com/getgrav/grav-plugin-form/pull/428) [#429](https://github.com/getgrav/grav-plugin-form/pull/429)
+    * Various improvements for nested form data in  `data.html.twig` and `data.txt.twig`
+    * Use `|length` rather than `|count` twig filter
+    * Various language updates
+1. [](#bugfix)
+    * Disabled the EXIF library for Dropzone for fixing the orientation as it was getting applied twice [#1923](https://github.com/getgrav/grav-plugin-admin/issues/1923)
+    * Forked Dropzone fo fix issue with Resize + EXIF orientation [#1923](https://github.com/getgrav/grav-plugin-admin/issues/1923)
+
+# v4.0.10
+## 06/08/2020
+
+1. [](#improved)
+    * Updated languages
+1. [](#bugfix)
+    * Fixed redirect causing empty form on homepage forms with no action set
+
+# v4.0.9
+## 06/03/2020
+
+1. [](#bugfix)
+    * Fixed bad `id` attribute on `checkbox` field [#421](https://github.com/getgrav/grav-plugin-form/issues/421)
+    * Show the `description` span even for an empty description [#313](https://github.com/getgrav/grav-plugin-form/pull/313)
+
+# v4.0.8
+## 04/30/2020
+
+1. [](#bugfix)
+    * Fixed issue with `force_bool` in `toggle` field to be more robust
+
 # v4.0.7
-## mm/dd/2020
+## 04/27/2020
 
 1. [](#new)
     * Added ability to hide form fields in `data.html.twig` and `data.txt.twig` with `field.store: false`
 1. [](#improved)
     * Updated node dependencies
+    * Added new `force_bool: true|false` option to `toggle` field to cast strings for use in BC situations
+1. [](#bugfix)
+    * Fix markdown links in changelog [#415](https://github.com/getgrav/grav-plugin-form/pull/415)
 
 # v4.0.6
 ## 03/19/2020
