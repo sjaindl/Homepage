@@ -108,7 +108,7 @@ errors:
   display: false
   log: true
 debugger:
-  enabled: false
+  enabled: true
   shutdown:
     close_connection: true
   twig: true
@@ -116,7 +116,7 @@ images:
   default_image_quality: 85
   cache_all: false
   cache_perms: '0755'
-  debug: false
+  debug: true
   auto_fix_orientation: false
 media:
   enable_media_timestamp: false

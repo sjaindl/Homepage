@@ -36,7 +36,6 @@ class Response
     private static $defaults = [
 
         'curl'  => [
-            CURLOPT_REFERER        => 'Grav GPM',
             CURLOPT_USERAGENT      => 'Grav GPM',
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_FOLLOWLOCATION => true,
@@ -285,6 +284,7 @@ class Response
             $options['fopen']['notification'] = ['self', 'progress'];
         }
 
+        $options['fopen']['header'] = 'Referer: ' . Grav::instance()['uri']->rootUrl(true);
         if (isset($options['fopen']['ssl'])) {
             $ssl = $options['fopen']['ssl'];
             unset($options['fopen']['ssl']);
@@ -367,6 +367,8 @@ class Response
      */
     private static function curlExecFollow($ch, $options, $callback)
     {
+        curl_setopt_array($ch, [ CURLOPT_REFERER => Grav::instance()['uri']->rootUrl(true) ]);
+
         if ($callback) {
             curl_setopt_array(
                 $ch,
@@ -409,7 +411,7 @@ class Response
             } else {
                 $code = (int)curl_getinfo($rch, CURLINFO_HTTP_CODE);
                 if ($code === 301 || $code === 302 || $code === 303) {
-                    preg_match('/Location:(.*?)\n/', $header, $matches);
+                    preg_match('/(?:^|\n)Location:(.*?)\n/i', $header, $matches);
                     $uri = trim(array_pop($matches));
                 } else {
                     $code = 0;

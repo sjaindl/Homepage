@@ -1,0 +1,11 @@
+state: enabled
+email: jaindl.stefan@gmail.com
+fullname: 'Stefan Jaindl'
+title: admin
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$.aSzWYP2yqmfLHCctbWT6OhnYIpclp5MqJGFLLNzGZIo/u9j28zHq

@@ -13,5 +13,6 @@ zeitrafferTitle: Zeitraffer
 zeitrafferSubtitle: 'Fantastische Zeitraffer Videos'
 width: 840
 height: 630
+videosPerSlider: 4
 ---
 
