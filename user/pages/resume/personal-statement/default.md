@@ -1,6 +1,6 @@
 ---
 title: 'Personal Statement'
-published: false
+published: true
 date: '13:34 07/21/2014'
 taxonomy:
     category:
