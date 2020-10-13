@@ -1,18 +1,18 @@
 {% if page.header.header_id == 'home' %}
+    {% set headerImage = 'resume.jpeg' %}
+    {% set headerText = '{{ config.site.metadata.resumeHeader }}' %}
+    {% set headerPageName = 'resume' %}
+{% elseif page.header.header_id == 'travel' %}
     {% set headerImage = 'reisen.jpeg' %}
-    {% set headerText = 'Herzlich Willkommen auf meiner Webseite! Hier finden Sie eine Sammlung meiner Reisen, Projekten und Arbeiten' %}
-    {% set headerPageName = 'abenteuer' %}
-{% elseif page.header.header_id == 'abenteuer' %}
-    {% set headerImage = 'reisen.jpeg' %}
-    {% set headerText = 'Herzlich Willkommen auf meiner Webseite! Hier finden Sie eine Sammlung meiner Reisen, Projekten und Arbeiten' %}
+    {% set headerText = '{{ config.site.metadata.abenteuerHeader }}' %}
     {% set headerPageName = 'abenteuer' %}
 {% elseif page.header.header_id == 'hochzeit' %}
     {% set headerImage = 'hochzeitsvideos.jpeg' %}
-    {% set headerText = 'Der glanzvollste Moment in Ihrem Leben, wir halten diesen mit Fotos und Videos fest' %}
+    {% set headerText = '{{ config.site.metadata.hochzeitHeader }}' %}
     {% set headerPageName = 'hochzeitsvideo' %}
 {% elseif page.header.header_id == 'zr' %}
     {% set headerImage = 'reisen.jpeg' %}
-    {% set headerText = 'Zeitraffer-Aufnahmen lassen die Zeit wie im Flug vergehen, als drehte sich die Welt plötzlich schneller.' %}
+    {% set headerText = '{{ config.site.metadata.zeitrafferHeader }}' %}
     {% set headerPageName = 'zeitraffer' %}
 {% endif %}
 
@@ -24,11 +24,12 @@
                 <div class="row" style="z-index: 10000!important;">
                     <div class="col-xs-12 col-sm-12 col-md-12 mt-2 ">
                         <ul class="list-unstyled list-inline social text-center">
+
                             <li class="list-inline-item"><a
-                                        class="circle-move travel {% if page.header.header_id == 'home' %} travel-active {% endif %}"
-                                        href="{{ base_url_absolute }}" data-toggle="tooltip" data-placement="bottom"
-                                        title="abenteuer"><i
-                                            class="fas fa-plane"></i></a>
+                                class="circle resume {% if page.header.header_id == 'home' %} resume-active {% endif %}"
+                                href="{{ base_url_absolute }}" data-toggle="tooltip" data-placement="top"
+                                title="resume"><i
+                                    class="fas fa-file"></i></a>
                             </li>
 
                             <li class="list-inline-item">
@@ -44,8 +45,8 @@
                                             class="fas fa-video"></i></a>
                             </li>
                             <li class="list-inline-item"><a
-                                class="circle travel {% if page.header.header_id != 'hochzeit' and page.header.header_id != 'zr' %} travel-active {% endif %}"
-                                href="{{ base_url_absolute }}/resume" data-toggle="tooltip" data-placement="top"
+                                class="circle travel {% if page.header.header_id == 'travel' %}  travel-active {% endif %}"
+                                href="{{ base_url_absolute }}/reisen" data-toggle="tooltip" data-placement="top"
                                 title="abenteuer"><i
                                     class="fas fa-plane"></i></a>
                             </li>

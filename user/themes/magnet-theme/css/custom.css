@@ -259,6 +259,26 @@ section .section-title {
     color: white !important;
 }
 
+.linkedin {
+    background-color: #0c5460 !important;
+}
+
+.linkedin:hover {
+    background-color: #0e76a8 !important;
+    transition: .5s all ease !important;
+    color: white !important;
+}
+
+.github {
+    background-color: #0c5460 !important;
+}
+
+.github:hover {
+    background-color: #211F1F !important;
+    transition: .5s all ease !important;
+    color: white !important;
+}
+
 .weeding {
     background-color: #0c5460;
 }
@@ -287,6 +307,20 @@ section .section-title {
     color: white !important;
 }
 
+.resume {
+    background-color: #0c5460;
+}
+
+.resume-active {
+    background-color: rgba(16, 160, 176, 0.85) !important;
+}
+
+.resume:hover {
+    background-color: rgb(16, 160, 176) !important;
+    transition: .5s all ease !important;
+    color: white !important;
+}
+
 .timelapse {
     background-color: #0c5460;
 }
@@ -302,6 +336,12 @@ section .section-title {
 }
 
 .badge-color-travel {
+    background-color: rgba(16, 160, 176, 0.85) !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.badge-color-resume {
     background-color: rgba(16, 160, 176, 0.85) !important;
     padding-left: 20px !important;
     padding-right: 20px !important;

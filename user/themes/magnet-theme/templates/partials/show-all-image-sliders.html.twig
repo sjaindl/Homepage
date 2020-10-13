@@ -16,7 +16,7 @@
     </div>
 </section>
 
-{% set parentPage = '/home/' ~ page.title|lower %}
+{% set parentPage = '/reisen/' ~ page.title|lower %}
 
 {% for p in page.find(parentPage).children %}
     {# {% if not p.routable %} #}

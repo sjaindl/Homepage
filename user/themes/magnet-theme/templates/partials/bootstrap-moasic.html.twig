@@ -4,7 +4,7 @@
             {% for p in pages.children %}
                 {% for pp in p.children %}
                     {% if (loop.index0 % 3) == 0 %}
-                        <a href="/grav/home/{{ pp.title|lower|url_encode }}">
+                        <a href="/grav/reisen/{{ pp.title|lower|url_encode }}">
                             <div class="view overlay">
                                 {% if pp.media['mosaic.jpeg'] is not null %}
                                     {{ pp.media['mosaic.jpeg'].quality(25).html }}
@@ -43,7 +43,7 @@
             {% for p in pages.children %}
                 {% for pp in p.children %}
                     {% if (loop.index0 % 3) == 1 %}
-                        <a href="/grav/home/{{ pp.title|lower|url_encode }}">
+                        <a href="/grav/reisen/{{ pp.title|lower|url_encode }}">
                         {# <a href="#{{ pp.title|camelize }}"> #}
                             <div class="view overlay">
                                 {% if pp.media['mosaic.jpeg'] is not null %}
@@ -82,7 +82,7 @@
             {% for p in pages.children %}
                 {% for pp in p.children %}
                     {% if (loop.index0 % 3) == 2 %}
-                        <a href="/grav/home/{{ pp.title|lower|url_encode }}">
+                        <a href="/grav/reisen/{{ pp.title|lower|url_encode }}">
                         {# <a href="#{{ pp.title|camelize }}"> #}
                             <div class=" view overlay">
                                 {% if pp.media['mosaic.jpeg'] is not null %}

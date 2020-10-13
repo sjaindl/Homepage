@@ -1,21 +1,19 @@
-{#
 <div class="container social-media-responsive" style="position: absolute; right: 30px; padding: 20px">
     <ul class="list-unstyled list-inline social text-right">
-        <li class="list-inline-item"><a class="circle facebook" href="javascript:void();"><i
-                        class="fa fa-facebook"></i></a>
+        <li class="list-inline-item"><a class="circle linkedin" href="https://www.linkedin.com/in/stefanjaindl" target="_blank"><i
+            class="fa fa-linkedin"></i></a>
         </li>
-        <li class="list-inline-item"><a class="circle instagram" href="javascript:void();"><i
-                        class="fa fa-instagram"></i></a>
+        <li class="list-inline-item"><a class="circle github" href="https://github.com/sjaindl" target="_blank"><i
+                    class="fab fa-github"></i></a>
         </li>
     </ul>
 </div>
-#}
 
-{#TODO IF ELSE #}
-{% set headerImage = '{{ config.site.metadata.abenteuerImage }}' %}
-{% set headerText = '{{ config.site.metadata.abenteuerHeader }}' %}
-{% set headerPageName = 'abenteuer' %}
-{% if page.header.header_id == 'home' %}
+{# TODO IF ELSE #}
+{% set headerImage = '{{ config.site.metadata.resumeImage }}' %}
+{% set headerText = '{{ config.site.metadata.resumeHeader }}' %}
+{% set headerPageName = 'home' %}
+{% if page.header.header_id == 'travel' %}
     {% set headerImage = '{{ config.site.metadata.abenteuerImage }}' %}
     {% set headerText = '{{ config.site.metadata.abenteuerHeader }}' %}
     {% set headerPageName = 'abenteuer' %}
@@ -34,8 +32,10 @@
      style="background: url('{{ url('theme://') }}/{{ config.site.metadata.hochzeitImage }}') no-repeat center center fixed; -webkit-background-size: cover;
 {% elseif page.header.header_id == 'zr' %}
      style="background: url('{{ url('theme://') }}/{{ config.site.metadata.zeitrafferImage }}') no-repeat center center fixed; -webkit-background-size: cover;
-{% else %}
+{% elseif page.header.header_id == 'travel' %}
      style="background: url('{{ url('theme://') }}/{{ config.site.metadata.abenteuerImage }}') no-repeat center center fixed; -webkit-background-size: cover;
+{% else %}
+     style="background: url('{{ url('theme://') }}/{{ config.site.metadata.resumeImage }}') no-repeat center center fixed; -webkit-background-size: cover;
 {% endif %}
              -moz-background-size: cover;
              -o-background-size: cover;
@@ -43,14 +43,16 @@
     <div class="container align-items-center">
         <div class="row d-flex justify-content-center text-center">
             <div class="col-md-5 col-lg-4 margin-top-header">
-                <span class="badge badge-pill badge-primary"><h2>abenteuermagnet</h2></span>
+                <span class="badge badge-pill badge-primary"><h2>stefanjaindl</h2></span>
                 <p class="header-banner"{% if page.header.header_id == 'hochzeit' %}style="color: #afafaf;"{% endif %}>
                     {% if page.header.header_id == 'hochzeit' %}
                         {{ config.site.metadata.hochzeitHeader }}
                     {% elseif page.header.header_id == 'zr' %}
                         {{ config.site.metadata.zeitrafferHeader }}
-                    {% else %}
+                    {% elseif page.header.header_id == 'travel' %}
                         {{ config.site.metadata.abenteuerHeader }}
+                    {% else %}
+                        {{ config.site.metadata.resumeHeader }}
                     {% endif %}
                     
                 </p>
@@ -58,30 +60,27 @@
                     <div class="col-xs-12 col-sm-12 col-md-12 mt-2 ">
                         <ul class="list-unstyled list-inline social text-center">
 
-                            <li class="list-inline-item"><a
-                                        class="circle travel {% if page.header.header_id != 'hochzeit' and page.header.header_id != 'zr' %} travel-active {% endif %}"
-                                        href="{{ base_url_absolute }}" data-toggle="tooltip" data-placement="top"
-                                        title="abenteuer"><i
-                                            class="fas fa-plane"></i></a>
+                            <li class="list-inline-item">
+                                <a class="circle resume {% if page.header.header_id == 'home' %} resume-active {% endif %}"
+                                href="{{ base_url_absolute }}" data-toggle="tooltip" data-placement="top"
+                                title="resume"><i class="fas fa-file"></i></a>
                             </li>
-
                             <li class="list-inline-item">
                                 <a class="circle weeding {% if page.header.header_id == 'hochzeit' %} weeding-active {% endif %}"
                                    href="{{ base_url_absolute }}/hochzeitsvideos" data-toggle="tooltip" data-placement="top"
                                    title="hochzeitvideos"><img class="rings-icon" src="http://www.abenteuermagnet.at/user/themes/magnet-theme/{{config.site.metadata.iconHochzeit}}"></a>
                             </li>
-                            <li class="list-inline-item"><a
-                                        class="circle timelapse {% if page.header.header_id == 'zr' %} timelapse-active {% endif %}"
-                                        href="{{ base_url_absolute }}/zeitraffer" data-toggle="tooltip" data-placement="top"
-                                        title="zeitraffer"><i
-                                            class="fas fa-video"></i></a>
+                            <li class="list-inline-item">
+                                <a class="circle timelapse {% if page.header.header_id == 'zr' %} timelapse-active {% endif %}"
+                                href="{{ base_url_absolute }}/zeitraffer" data-toggle="tooltip" data-placement="top"
+                                title="zeitraffer"><i class="fas fa-video"></i></a>
                             </li>
-                            <li class="list-inline-item"><a
-                                class="circle travel {% if page.header.header_id != 'hochzeit' and page.header.header_id != 'zr' %} travel-active {% endif %}"
-                                href="{{ base_url_absolute }}/resume" data-toggle="tooltip" data-placement="top"
-                                title="abenteuer"><i
-                                    class="fas fa-plane"></i></a>
+                            <li class="list-inline-item">
+                                <a class="circle travel {% if page.header.header_id == 'travel' %}  travel-active {% endif %}"
+                                href="{{ base_url_absolute }}/reisen" data-toggle="tooltip" data-placement="top"
+                                title="abenteuer"><i class="fas fa-plane"></i></a>
                             </li>
+                            
                         </ul>
                     </div>
                 </div>
