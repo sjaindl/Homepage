@@ -7,6 +7,18 @@ taxonomy:
 theme: magnet-theme
 education:
     -
+        date: '06/2019 – 07/2019'
+        topic: 'Data Structures & Algorithms Nanodegree'
+        school: Udacity
+    -
+        date: '03/2018 – 10/2018'
+        topic: 'iOS Developer Nanodegree'
+        school: Udacity
+    -
+        date: '02/2018 – 03/2018'
+        topic: 'Front-End Javascript Frameworks: Angular'
+        school: Coursera
+    -
         date: '2008 - 2016'
         topic: 'Software Engineering and Business, BSc & MSc'
         school: 'Graz University of Technology'

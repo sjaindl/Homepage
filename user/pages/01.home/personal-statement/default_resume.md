@@ -1,7 +1,7 @@
 ---
 title: 'Personal Statement'
 published: true
-date: '13:34 07/21/2014'
+date: '13:34 10/14/2020'
 taxonomy:
     category:
         - left
