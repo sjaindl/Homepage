@@ -1,19 +1,25 @@
 ---
 title: Recognitions
-date: 13:34 06/21/2014 
-
-recognitions:
-    - title: Remus Logo Design.
-      desc: Internal contest. One of the three finalists.
-      place: Universidad Antonio de Nebrija. Madrid
-      position: 1-3
-      animation: fadeIn
-    - title: Vino de Toro Label Design.
-      desc: National contest. One of the 15 finalists.
-      place: Vino de Toro.
-      position: 2-15
-      animation: fadeIn  
-
+date: '13:34 10/13/2020'
 taxonomy:
-    category: right
+    category:
+        - right
+theme: resume
+recognitions:
+    -
+        title: 'Data Structures & Algorithms Nanodegree'
+        desc: Udacity
+        place: '06/2019 – 07/2019'
+        animation: fadeIn
+    -
+        title: 'iOS Developer Nanodegree'
+        desc: Udacity
+        place: '03/2018 – 10/2018'
+        animation: fadeIn
+    -
+        title: 'Front-End Javascript Frameworks: Angular'
+        desc: Coursera
+        place: '02/2018 – 03/2018'
+        animation: fadeIn
 ---
+

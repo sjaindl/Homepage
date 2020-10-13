@@ -1,19 +1,30 @@
 ---
-title: EXPERIENCE
-date: 13:34 06/21/2014 
-
-experience:
-  - date: From 2013 to 2014
-    role: Art Director.
-    company: Distrito 01 (d01 .es)
-    years: 2
-    animation: fadeIn
-  - date: From 2009 to July 2014
-    role: Graphics & Web.
-    company: Freelance.
-    years: 6
-    animation: fadeIn
-
+title: Experience
+date: '13:34 10/13/2020'
 taxonomy:
-    category: right
+    category:
+        - right
+theme: resume
+experience:
+    -
+        date: 'Since 03/2020'
+        role: 'Mobile Software Engineer'
+        company: 'Alturos Destinations GmbH'
+        animation: fadeIn
+    -
+        date: '07/2013 - 02/2020'
+        role: 'Professional IT Consultant'
+        company: 'proALPHA Software Austria GmbH'
+        animation: fadeIn
+    -
+        date: '2011 - 2018'
+        role: 'Web, iOS & Android Senior Developer'
+        company: 'International Catrobat Association'
+        animation: fadeIn
+    -
+        date: '2013 - 2016'
+        role: 'Summer of Code Student, Mentor & Coordinator'
+        company: 'Google Inc.'
+        animation: fadeIn
 ---
+

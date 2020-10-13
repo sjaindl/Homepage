@@ -1,42 +1,54 @@
 ---
-title: DESIGN SKILLS
-date: 13:34 04/21/2014
-
-column1_name: 01 Computer
-column1_animation: fadeIn
-column2_name: 02 Knowledge
-column2_animation: fadeIn
-
-column1:
-  - name: Adobe Photoshop
-    level: 8
-  - name: Adobe Illustrator
-    level: 8  
-  - name: Adobe Indesign
-    level: 6  
-  - name: Adobe Flash
-    level: 7  
-  - name: "HTML & CSS"
-    level: 8 
-  - name: "Javascript & Jquery"
-    level: 3
-  - name: AutoCad
-    level: 8
-  - name: CATIA
-    level: 8 
-  - name: 3ds Max
-    level: 3
-  - name: Cinema 4D
-    level: 4           
-
-column2:
-  - name: Grid & Layout.
-  - name: Good sense for typography.
-  - name: Color theory knowledge.
-  - name: Web usability.
-  - name: Interface Design.
-  - name: Google Analytics & SEO.
-    
+title: Skills
+date: '13:34 10/13/2020'
 taxonomy:
-    category: left
+    category:
+        - left
+theme: resume
+column1_name: '01 Technical'
+column1_animation: fadeIn
+column2_name: '02 Programming Languages'
+column2_animation: fadeIn
+column1:
+    -
+        name: 'Mobile App Development'
+        level: 7
+    -
+        name: 'Agile Software Development'
+        level: 7
+    -
+        name: git
+        level: 7
+    -
+        name: 'Design Patterns'
+        level: 6
+    -
+        name: 'Algorithms & Data Structures'
+        level: 6
+    -
+        name: 'Web Development'
+        level: 5
+    -
+        name: Databases
+        level: 8
+column2:
+    -
+        name: Swift
+    -
+        name: 'Kotlin/Kotlin Native (Multiplatform)'
+    -
+        name: Java
+    -
+        name: C/C++
+    -
+        name: Python
+    -
+        name: 'Typescript (Angular)'
+    -
+        name: 'Javascript, HTML & CSS'
+    -
+        name: PHP
+    -
+        name: 'OpenEdge ABL'
 ---
+
