@@ -2,6 +2,7 @@
 title: Resume
 theme: magnet-theme
 blog_url: resume
+header_id: home
 sitemap:
     changefreq: monthly
     priority: 1.03
