@@ -33,7 +33,7 @@
 
                             <li class="list-inline-item">
                                 <a class="circle-move weeding {% if page.header.header_id == 'hochzeit' %} weeding-active {% endif %}"
-                                   href="{{ base_url_absolute }}/left" data-toggle="tooltip"
+                                   href="{{ base_url_absolute }}/hochzeitsvideos" data-toggle="tooltip"
                                    data-placement="bottom" title="hochzeitvideos"><img class="rings-icon" src="http://www.abenteuermagnet.at/user/themes/magnet-theme/{{config.site.metadata.iconHochzeit}}"></a>
                             </li>
 
@@ -42,6 +42,12 @@
                                         href="{{ base_url_absolute }}/zeitraffer" data-toggle="tooltip" data-placement="bottom"
                                         title="zeitraffer"><i
                                             class="fas fa-video"></i></a>
+                            </li>
+                            <li class="list-inline-item"><a
+                                class="circle travel {% if page.header.header_id != 'hochzeit' and page.header.header_id != 'zr' %} travel-active {% endif %}"
+                                href="{{ base_url_absolute }}/resume" data-toggle="tooltip" data-placement="top"
+                                title="abenteuer"><i
+                                    class="fas fa-plane"></i></a>
                             </li>
                         </ul>
                     </div>

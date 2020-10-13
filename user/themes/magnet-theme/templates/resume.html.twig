@@ -1,4 +1,5 @@
-{% embed 'partials/base.html.twig' %}
+{# {% embed 'partials/resume_base.html.twig' %} #}
+{% embed 'partials/resume_base.html.twig' %}
 
   {% set collection = page.collection() %}
   {% set base_url = page.url %}
@@ -16,7 +17,7 @@
     <div class="large-6 columns">
       {% for module in page.collection({'items':{'@taxonomy.category': 'left'},'order': {'by': 'date', 'dir': 'desc'}}) %}
         {% if module.template %}
-          {% include 'layouts/' ~ module.template ~ '.html.twig' %}
+          {% include module.template ~ '.html.twig' %}
         {% endif %}
       {% endfor %}
     </div> 
@@ -24,7 +25,7 @@
     <div class="large-6 columns">
       {% for module in page.collection({'items':{'@taxonomy.category': 'right'},'order': {'by': 'date', 'dir': 'desc'}}) %}
         {% if module.template %}
-          {% include 'layouts/' ~ module.template ~ '.html.twig' %}
+          {% include module.template ~ '.html.twig' %}
         {% endif %}
       {% endfor %}
      </div>
