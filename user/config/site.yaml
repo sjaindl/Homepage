@@ -12,9 +12,11 @@ metadata:
   street: 'Lilienthalstraße 9'
   zip: '9020'
   city: Klagenfurt
-  abenteuerHeader: 'Herzlich Willkommen auf meiner Webseite! <br> Hier finden Sie eine Sammlung meiner Reisen, Projekten und Arbeiten'
+  resumeHeader: 'Herzlich Willkommen auf meiner Webseite! <br> Hier finden Sie eine Sammlung meiner Projekte, Blogposts und Reisen'
+  abenteuerHeader: 'The world is a book and those who do not travel read only a page'
   hochzeitHeader: 'Der glanzvollste Moment in Ihrem Leben, wir halten diesen mit Fotos und Videos fest'
   zeitrafferHeader: 'Zeitraffer-Aufnahmen lassen die Zeit wie im Flug vergehen, als drehte sich die Welt plötzlich schneller.'
+  resumeImage: images/header-mask/header-mask-resume.jpg
   abenteuerImage: images/header-mask/header-mask-reisen.jpeg
   hochzeitImage: images/header-mask/header-mask-hochzeitsvideos.jpeg
   zeitrafferImage: images/header-mask/header-mask-zeitraffer.jpeg
