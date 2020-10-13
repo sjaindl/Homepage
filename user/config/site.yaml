@@ -1,4 +1,4 @@
-title: Stefan Jaindl
+title: 'Stefan Jaindl'
 default_lang: de
 author:
   name: 'Stefan Jaindl'
@@ -7,8 +7,8 @@ taxonomies:
   - category
   - tag
 metadata:
-  telephone: '+43664/1554623'
-  homepage: www.abenteuermagnet.at
+  telephone: +43664/1554623
+  homepage: www.stefanjaindl.at
   street: 'Lilienthalstraße 9'
   zip: '9020'
   city: Klagenfurt
@@ -28,23 +28,21 @@ redirects: null
 routes: null
 blog:
   route: /blog
-
-
-# title: Leo C. Wilhoit
-description: Graphic & Web Designer
-# author:
-#   name: Team Grav
-#   email: 'joe@test.com'
-# metadata:
-#     description: 'Resume is a free and responsive theme for **Grav**. Its a port of Resume template by HTML5UP.'
-
-website: "getgrav.org"
-
+description: 'Software Engineer'
+website: getgrav.org
 address:
-    - line: "811 Margaret Street"
-    - line: "28015,"
-    - line: "Sugar Land, TX 77478"
-contact: 
-    - line: "LeoCWilhoit@jourrapide.com"
-    - line: "+34 713-902-8117"
-    - line: "@LeoCWilhoit"
+  -
+    line: 'Lilienthalstraße 9'
+  -
+    line: '9020 Klagenfurt'
+  -
+    line: 'Austria'
+contact:
+  -
+    line: jaindl.stefan@gmail.com
+  -
+    line: '+43664/1554623'
+  -
+    line: 'www.linkedin.com/in/stefanjaindl'
+  -
+    line: 'https://github.com/sjaindl'
