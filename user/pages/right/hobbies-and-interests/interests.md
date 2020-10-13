@@ -4,7 +4,7 @@ date: '13:34 02/21/2014'
 taxonomy:
     category:
         - right
-theme: resume
+theme: magnet-theme
 interests:
     -
         icon: foot

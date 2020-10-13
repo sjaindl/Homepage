@@ -1,0 +1,4 @@
+---
+theme: magnet-theme
+---
+

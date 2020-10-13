@@ -6,7 +6,7 @@ taxonomy:
     category:
         - left
 visible: true
-theme: resume
+theme: magnet-theme
 specialities:
     -
         icon: mobile

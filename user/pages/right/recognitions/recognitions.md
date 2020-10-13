@@ -4,7 +4,7 @@ date: '13:34 10/13/2020'
 taxonomy:
     category:
         - right
-theme: resume
+theme: magnet-theme
 recognitions:
     -
         title: 'Data Structures & Algorithms Nanodegree'

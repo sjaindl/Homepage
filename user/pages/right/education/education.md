@@ -4,7 +4,7 @@ date: '13:34 06/21/2014'
 taxonomy:
     category:
         - right
-theme: resume
+theme: magnet-theme
 education:
     -
         date: '2008 - 2016'

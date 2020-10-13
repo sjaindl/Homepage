@@ -4,7 +4,7 @@ date: '13:34 10/13/2020'
 taxonomy:
     category:
         - left
-theme: resume
+theme: magnet-theme
 column1_name: '01 Technical'
 column1_animation: fadeIn
 column2_name: '02 Programming Languages'

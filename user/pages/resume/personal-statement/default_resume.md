@@ -5,7 +5,7 @@ date: '13:34 07/21/2014'
 taxonomy:
     category:
         - left
-theme: resume
+theme: magnet-theme
 ---
 
 Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur.Donec id elit non mi porta gravida at eget metus..

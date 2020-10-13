@@ -1,6 +1,6 @@
 ---
 title: Resume
-theme: resume
+theme: magnet-theme
 blog_url: resume
 sitemap:
     changefreq: monthly
