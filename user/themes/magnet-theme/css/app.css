@@ -2,20 +2,27 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
+  background: #eee;
 }
+
 .main {
   margin-top: 4rem;
   margin-bottom: 3rem;
 }
 
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
+/* Resume Headings */
+.resume-heading h1, 
+.resume-heading h2, 
+.resume-heading h3, 
+.resume-heading h4, 
+.resume-heading h5, 
+.resume-heading h6 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
 
-h4 {
+.resume-heading h4 {
   font-weight: 400;
   border-bottom: 2px dotted;
   padding-top: 4rem;

@@ -3727,7 +3727,7 @@ p {
     line-height: 1.35; }
 
 /* Default header styles */
-h1, h2, h3, h4, h5, h6 {
+/* h1, h2, h3, h4, h5, h6 {
   color: #222222;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
@@ -3735,13 +3735,13 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.4;
   margin-bottom: 0.5rem;
   margin-top: 0.2rem;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility; } */
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
     color: #6f6f6f;
     font-size: 60%;
     line-height: 0; }
 
-h1 {
+/* h1 {
   font-size: 2.125rem; }
 
 h2 {
@@ -3757,7 +3757,7 @@ h5 {
   font-size: 1.125rem; }
 
 h6 {
-  font-size: 1rem; }
+  font-size: 1rem; } */
 
 .subheader {
   line-height: 1.4;

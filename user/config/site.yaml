@@ -17,6 +17,7 @@ metadata:
   hochzeitHeader: 'Der glanzvollste Moment in Ihrem Leben, wir halten diesen mit Fotos und Videos fest'
   zeitrafferHeader: 'Zeitraffer-Aufnahmen lassen die Zeit wie im Flug vergehen, als drehte sich die Welt plötzlich schneller.'
   resumeImage: images/header-mask/header-mask-resume.jpg
+  meImage: images/header-mask/header-mask-resume-me.jpg
   abenteuerImage: images/header-mask/header-mask-reisen.jpeg
   hochzeitImage: images/header-mask/header-mask-hochzeitsvideos.jpeg
   zeitrafferImage: images/header-mask/header-mask-zeitraffer.jpeg
@@ -31,7 +32,7 @@ routes: null
 blog:
   route: /blog
 description: 'Software Engineer'
-website: getgrav.org
+website: stefanjaindl.at
 address:
   -
     line: 'Lilienthalstraße 9'
@@ -44,7 +45,3 @@ contact:
     line: jaindl.stefan@gmail.com
   -
     line: '+43664/1554623'
-  -
-    line: 'www.linkedin.com/in/stefanjaindl'
-  -
-    line: 'https://github.com/sjaindl'
