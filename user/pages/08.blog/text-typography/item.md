@@ -6,7 +6,9 @@ taxonomy:
         - blog
     tag:
         - journal
-theme: antimatter
+theme: magnet-theme
+feed:
+    limit: 10
 hero_classes: 'text-light title-h1h2 overlay-dark hero-large parallax'
 hero_image: unsplash-text.jpg
 show_sidebar: true

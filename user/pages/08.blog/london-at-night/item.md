@@ -8,7 +8,9 @@ taxonomy:
         - photography
         - city
         - night
-theme: antimatter
+theme: magnet-theme
+feed:
+    limit: 10
 hero_classes: 'text-light title-h1h2 overlay-dark hero-large parallax'
 hero_image: unsplash-london-night.jpg
 show_sidebar: true

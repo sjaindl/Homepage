@@ -7,7 +7,9 @@ taxonomy:
     tag:
         - journal
         - link
-theme: antimatter
+theme: magnet-theme
+feed:
+    limit: 10
 continue_link: true
 link: 'http://daringfireball.net'
 ---

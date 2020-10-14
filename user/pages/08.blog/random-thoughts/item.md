@@ -6,7 +6,9 @@ taxonomy:
         - blog
     tag:
         - journal
-theme: antimatter
+theme: magnet-theme
+feed:
+    limit: 10
 ---
 
 Lorem markdownum mirum. Solus restare dabat, gladio vipereis caerula?

@@ -1,6 +1,6 @@
 ---
 routable: false
-theme: antimatter
+theme: magnet-theme
 ---
 
 #### Some Text Widget

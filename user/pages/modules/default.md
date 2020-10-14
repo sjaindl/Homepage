@@ -1,5 +1,5 @@
 ---
 routable: false
-theme: antimatter
+theme: magnet-theme
 ---
 

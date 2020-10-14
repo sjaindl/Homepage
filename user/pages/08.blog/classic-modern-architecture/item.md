@@ -7,7 +7,9 @@ taxonomy:
     tag:
         - photography
         - architecture
-theme: antimatter
+theme: magnet-theme
+feed:
+    limit: 10
 hero_classes: 'text-dark title-h1h2 overlay-light hero-large parallax'
 hero_image: unsplash-luca-bravo.jpg
 blog_url: /blog
