@@ -3,9 +3,13 @@ default_lang: de
 author:
   name: 'Stefan Jaindl'
   email: jaindl.stefan@gmail.com
-taxonomies:
-  - category
-  - tag
+taxonomies: [category,tag,month]
+redirects:
+    /changelog: /blog/the-urban-jungle
+routes:
+    /something/else: /blog/focus-and-blur
+    /another/one/(.*): /blog/$1
+
 metadata:
   telephone: +43664/1554623
   homepage: www.stefanjaindl.at
