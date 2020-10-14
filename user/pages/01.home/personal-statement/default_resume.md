@@ -8,8 +8,8 @@ taxonomy:
 theme: magnet-theme
 ---
 
-Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur.Donec id elit non mi porta gravida at eget metus..
+Herzlich Willkommen auf meiner Webseite!
 
-Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. 
+Hier findest du meinen Lebenslauf, eine Übersicht über meine persönlichen Projekte, hilfreiche Blogposts zu unterschiedlichsten Themen aus dem Softwareentwickler-Alltag und Schnappschüsse aus meinen Reisen rund um die Welt.
 
-Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
+Enjoy :)
