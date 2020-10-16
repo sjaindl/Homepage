@@ -21,6 +21,10 @@
     {% set headerImage = '{{ config.site.metadata.hochzeitImage }}' %}
     {% set headerText = '{{ config.site.metadata.hochzeitHeader }}' %}
     {% set headerPageName = 'hochzeitsvideo' %}
+{% elseif page.header.header_id == 'blog' %}
+    {% set headerImage = '{{ config.site.metadata.blogImage }}' %}
+    {% set headerText = '{{ config.site.metadata.blogHeader }}' %}
+    {% set headerPageName = 'blog' %}
 {% elseif page.header.header_id == 'zr' %}
     {% set headerImage = '{{ config.site.metadata.zeitrafferImage }}' %}
     {% set headerText = '{{ config.site.metadata.zeitrafferHeader }}' %}
@@ -32,6 +36,8 @@
      style="background: url('{{ url('theme://') }}/{{ config.site.metadata.hochzeitImage }}') no-repeat center center fixed; -webkit-background-size: cover;
 {% elseif page.header.header_id == 'zr' %}
      style="background: url('{{ url('theme://') }}/{{ config.site.metadata.zeitrafferImage }}') no-repeat center center fixed; -webkit-background-size: cover;
+{% elseif page.header.header_id == 'blog' %}
+     style="background: url('{{ url('theme://') }}/{{ config.site.metadata.blogImage }}')
 {% elseif page.header.header_id == 'travel' %}
      style="background: url('{{ url('theme://') }}/{{ config.site.metadata.abenteuerImage }}') no-repeat center center fixed; -webkit-background-size: cover;
 {% else %}
@@ -47,6 +53,8 @@
                 <p class="header-banner"{% if page.header.header_id == 'hochzeit' %}style="color: #afafaf;"{% endif %}>
                     {% if page.header.header_id == 'hochzeit' %}
                         {{ config.site.metadata.hochzeitHeader }}
+                    {% elseif page.header.header_id == 'blog' %}
+                        {{ config.site.metadata.blogHeader }}
                     {% elseif page.header.header_id == 'zr' %}
                         {{ config.site.metadata.zeitrafferHeader }}
                     {% elseif page.header.header_id == 'travel' %}
@@ -66,9 +74,9 @@
                                 title="resume"><i class="fas fa-file"></i></a>
                             </li>
                             <li class="list-inline-item">
-                                <a class="circle weeding {% if page.header.header_id == 'hochzeit' %} weeding-active {% endif %}"
-                                   href="{{ base_url_absolute }}/hochzeitsvideos" data-toggle="tooltip" data-placement="top"
-                                   title="hochzeitvideos"><img class="rings-icon" src="http://www.abenteuermagnet.at/user/themes/magnet-theme/{{config.site.metadata.iconHochzeit}}"></a>
+                                <a class="circle blog {% if page.header.header_id == 'blog' %} blog-active {% endif %}"
+                                   href="{{ base_url_absolute }}/blog" data-toggle="tooltip" data-placement="top"
+                                   title="blog"><i class="fas fa-blog"></i></a>
                             </li>
                             <li class="list-inline-item">
                                 <a class="circle timelapse {% if page.header.header_id == 'zr' %} timelapse-active {% endif %}"

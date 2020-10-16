@@ -1,5 +1,6 @@
 ---
 title: Blog
+header_id: blog
 sitemap:
     changefreq: monthly
 body_classes: 'header-dark header-transparent'
