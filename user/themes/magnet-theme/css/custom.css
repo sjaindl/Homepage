@@ -12,6 +12,10 @@ body {
     position: relative !important;
 }
 
+h2 {
+    font-size: 2rem;
+}
+
 h1,
 h2,
 h3,
@@ -19,6 +23,7 @@ h4,
 h5,
 h6 {
     color: #454B4D;
+    letter-spacing: 0px;
 }
 
 pre {
@@ -303,6 +308,20 @@ section .section-title {
 
 .travel:hover {
     background-color: rgb(16, 160, 176) !important;
+    transition: .5s all ease !important;
+    color: white !important;
+}
+
+.blog {
+    background-color: #3a539b;
+}
+
+.blog-active {
+    background-color: rgba(0, 0, 139, 0.85) !important;
+}
+
+.blog:hover {
+    background-color: rgb(0, 0, 139) !important;
     transition: .5s all ease !important;
     color: white !important;
 }

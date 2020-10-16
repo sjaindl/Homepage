@@ -6,10 +6,14 @@
     {% set headerImage = 'reisen.jpeg' %}
     {% set headerText = '{{ config.site.metadata.abenteuerHeader }}' %}
     {% set headerPageName = 'abenteuer' %}
-{% elseif page.header.header_id == 'hochzeit' %}
+    {% elseif page.header.header_id == 'hochzeit' %}
     {% set headerImage = 'hochzeitsvideos.jpeg' %}
     {% set headerText = '{{ config.site.metadata.hochzeitHeader }}' %}
     {% set headerPageName = 'hochzeitsvideo' %}
+{% elseif page.header.header_id == 'blog' %}
+    {% set headerImage = 'blog.jpeg' %}
+    {% set headerText = '{{ config.site.metadata.blogHeader }}' %}
+    {% set headerPageName = 'blog' %}
 {% elseif page.header.header_id == 'zr' %}
     {% set headerImage = 'reisen.jpeg' %}
     {% set headerText = '{{ config.site.metadata.zeitrafferHeader }}' %}
@@ -33,9 +37,10 @@
                             </li>
 
                             <li class="list-inline-item">
-                                <a class="circle-move weeding {% if page.header.header_id == 'hochzeit' %} weeding-active {% endif %}"
-                                   href="{{ base_url_absolute }}/hochzeitsvideos" data-toggle="tooltip"
-                                   data-placement="bottom" title="hochzeitvideos"><img class="rings-icon" src="http://www.abenteuermagnet.at/user/themes/magnet-theme/{{config.site.metadata.iconHochzeit}}"></a>
+                                <a class="circle-move blog {% if page.header.header_id == 'blog' %} blog-active {% endif %}"
+                                   href="{{ base_url_absolute }}/blog" data-toggle="tooltip"
+                                   data-placement="bottom" title="blog">
+                                   <i class="fas fa-blog"></i></a>
                             </li>
 
                             <li class="list-inline-item"><a
