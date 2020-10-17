@@ -21,11 +21,11 @@ metadata:
   blogHeader: 'Hilfreiche Blogposts zu unterschiedlichsten Themen aus dem Softwareentwickler-Alltag'
   hochzeitHeader: 'Der glanzvollste Moment in Ihrem Leben, wir halten diesen mit Fotos und Videos fest'
   zeitrafferHeader: 'Zeitraffer-Aufnahmen lassen die Zeit wie im Flug vergehen, als drehte sich die Welt plötzlich schneller.'
-  resumeImage: images/header-mask/header-mask-resume.jpg
-  meImage: images/header-mask/header-mask-resume-me.jpg
+  resumeImage: images/header-mask/header-mask-resume.jpeg
+  meImage: images/header-mask/header-mask-resume-me.jpeg
   abenteuerImage: images/header-mask/header-mask-reisen.jpeg
   hochzeitImage: images/header-mask/header-mask-hochzeitsvideos.jpeg
-  blogImage: images/header-mask/header-mask-blog.jpg
+  blogImage: images/header-mask/header-mask-blog.jpeg
   zeitrafferImage: images/header-mask/header-mask-zeitraffer.jpeg
   iconHochzeit: images/misc/icon_rings.svg
 summary:

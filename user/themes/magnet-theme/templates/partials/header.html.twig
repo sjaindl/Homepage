@@ -33,16 +33,16 @@
 
 <div id="intro"
 {% if page.header.header_id == 'hochzeit' %}
-     style="background: url('{{ url('theme://') }}/{{ config.site.metadata.hochzeitImage }}') no-repeat center center fixed; -webkit-background-size: cover;
+     style="background: url('{{ url('theme://') }}/{{ config.site.metadata.hochzeitImage }}')
 {% elseif page.header.header_id == 'zr' %}
-     style="background: url('{{ url('theme://') }}/{{ config.site.metadata.zeitrafferImage }}') no-repeat center center fixed; -webkit-background-size: cover;
+     style="background: url('{{ url('theme://') }}/{{ config.site.metadata.zeitrafferImage }}')
 {% elseif page.header.header_id == 'blog' %}
      style="background: url('{{ url('theme://') }}/{{ config.site.metadata.blogImage }}')
 {% elseif page.header.header_id == 'travel' %}
-     style="background: url('{{ url('theme://') }}/{{ config.site.metadata.abenteuerImage }}') no-repeat center center fixed; -webkit-background-size: cover;
+     style="background: url('{{ url('theme://') }}/{{ config.site.metadata.abenteuerImage }}') 
 {% else %}
-     style="background: url('{{ url('theme://') }}/{{ config.site.metadata.resumeImage }}') no-repeat center center fixed; -webkit-background-size: cover;
-{% endif %}
+     style="background: url('{{ url('theme://') }}/{{ config.site.metadata.resumeImage }}') 
+{% endif %}  no-repeat center center fixed; -webkit-background-size: cover;
              -moz-background-size: cover;
              -o-background-size: cover;
              background-size: cover; ">
