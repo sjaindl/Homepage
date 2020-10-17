@@ -1,6 +1,9 @@
 ---
 title: Blog
+body_classes: 'title-center title-h1h2'
+badge_class: badge-color-blog
 header_id: blog
+
 sitemap:
     changefreq: monthly
 body_classes: 'header-dark header-transparent'

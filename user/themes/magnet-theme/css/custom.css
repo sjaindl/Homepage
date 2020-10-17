@@ -313,6 +313,20 @@ section .section-title {
 }
 
 .blog {
+    background-color: #0c5460;
+}
+
+.blog-active {
+    background-color: rgba(19, 125, 58, 0.85) !important;
+}
+
+.blog:hover {
+    background-color: rgb(19, 125, 58) !important;
+    transition: .5s all ease !important;
+    color: white !important;
+}
+/*
+.blog {
     background-color: #3a539b;
 }
 
@@ -325,17 +339,18 @@ section .section-title {
     transition: .5s all ease !important;
     color: white !important;
 }
+*/
 
 .resume {
-    background-color: #0c5460;
+    background-color: #4e93b9;
 }
 
 .resume-active {
-    background-color: rgba(16, 160, 176, 0.85) !important;
+    background-color: rgba(78, 147, 185, 0.85) !important;
 }
 
 .resume:hover {
-    background-color: rgb(16, 160, 176) !important;
+    background-color: rgba(78, 147, 185) !important;
     transition: .5s all ease !important;
     color: white !important;
 }
@@ -361,7 +376,7 @@ section .section-title {
 }
 
 .badge-color-resume {
-    background-color: rgba(16, 160, 176, 0.85) !important;
+    background-color: rgba(78, 147, 185, 1) !important;
     padding-left: 20px !important;
     padding-right: 20px !important;
 }
@@ -373,6 +388,12 @@ section .section-title {
 }
 
 .badge-color-zeitraffer {
+    background-color: rgba(19, 125, 58, 0.85) !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.badge-color-blog {
     background-color: rgba(19, 125, 58, 0.85) !important;
     padding-left: 20px !important;
     padding-right: 20px !important;
