@@ -698,7 +698,7 @@ header,
 
 /* Extra Things */
 body {
-    background: #eee;
+    background: #eee !important;
     font-family: 'Open Sans', sans-serif;
 }
 
