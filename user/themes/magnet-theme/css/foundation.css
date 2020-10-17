@@ -52,7 +52,7 @@ html {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit; }
-
+/*
 html,
 body {
   font-size: 100%; }
@@ -71,7 +71,7 @@ body {
 
 a:hover {
   cursor: pointer; }
-
+*/
 img {
   max-width: 100%;
   height: auto; }
