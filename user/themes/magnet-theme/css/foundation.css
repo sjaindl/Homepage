@@ -3712,11 +3712,13 @@ a {
 
 /* Default paragraph styles */
 p {
+  /*
   font-family: inherit;
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.6;
   margin-bottom: 1.25rem;
+  */
   text-rendering: optimizeLegibility; }
   p.lead {
     font-size: 1.21875rem;
@@ -3906,7 +3908,7 @@ blockquote p {
   font-weight: bold;
   border: none;
   padding: 0 0.0625rem; }
-
+/*
 @media only screen and (min-width: 40.0625em) {
   h1, h2, h3, h4, h5, h6 {
     line-height: 1.4; }
@@ -3915,7 +3917,7 @@ blockquote p {
     font-size: 2.75rem; }
 
   h2 {
-    font-size: 2.3125rem; }
+    font-size: 2rem; }
 
   h3 {
     font-size: 1.6875rem; }
@@ -3928,6 +3930,7 @@ blockquote p {
 
   h6 {
     font-size: 1rem; } }
+    */
 .split.button {
   position: relative;
   padding-right: 5.0625rem; }

@@ -1,10 +1,12 @@
 /* Body */
+/*
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  /* margin-top: 3rem; */
-  background: #eee;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 300; 
+   margin-top: 3rem; 
+   background: #eee; 
 }
+*/
 
 .main {
   margin-top: 4rem;
@@ -18,7 +20,7 @@ body {
 .resume-heading h4, 
 .resume-heading h5, 
 .resume-heading h6 {
-  font-family: 'Open Sans', sans-serif;
+/* font-family: 'Open Sans', sans-serif;  */
   font-weight: 300;
 }
 
@@ -57,7 +59,8 @@ body {
   color: #222;
 }
 
-/* Global formatiing */
+/* Global formatting */
+
 .light, p, .name {
   color: #888888;
 }
@@ -70,9 +73,11 @@ body {
 .title {
   color: #232323;
 }
+/*
 p {
   font-weight: 300;
 }
+*/
 
 /* Specialities */
 .special {

@@ -15,14 +15,12 @@
             <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,400italic,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 
             {% block stylesheets %}
-            
                 {% do assets.addCss('theme://css/normalize.css') %}
-                 {% do assets.addCss('theme://css/foundation.css') %} 
+                {% do assets.addCss('theme://css/foundation.css') %} 
                 {% do assets.addCss('theme://icons/foundation-icons.css') %}
                 {% do assets.addCss('theme://css/animate.css') %}
                 {% do assets.addCss('theme://css/pizza.css') %}
-                {% do assets.addCss('theme://css/app.css') %} 
-                
+                {% do assets.addCss('theme://css/app.css') %}
             {% endblock %}
 
             <link href="{{ url('theme://css/print.css') }}" rel="stylesheet" type="text/css" media="print" />
