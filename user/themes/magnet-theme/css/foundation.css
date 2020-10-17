@@ -3678,6 +3678,7 @@ ul.pagination {
   .xxlarge-text-justify {
     text-align: justify !important; } }
 /* Typography resets */
+/*
 div,
 dl,
 dt,
@@ -3699,6 +3700,7 @@ th,
 td {
   margin: 0;
   padding: 0; }
+*/
 
 /* Default Link Styles */
 a {
@@ -3813,7 +3815,9 @@ dl {
 ul {
   margin-left: 1.1rem; }
   ul.no-bullet {
-    margin-left: 0; }
+    margin-left: 0;
+    margin: 0;
+    padding: 0; }
     ul.no-bullet li ul,
     ul.no-bullet li ol {
       margin-left: 1.25rem;
