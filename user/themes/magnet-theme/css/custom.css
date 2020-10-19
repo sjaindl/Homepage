@@ -370,6 +370,20 @@ section .section-title {
     color: white !important;
 }
 
+.projects {
+    background-color: #0c5460;
+}
+
+.projects-active {
+    background-color: rgba(19, 125, 58, 0.85) !important;
+}
+
+.projects:hover {
+    background-color: rgb(19, 125, 58) !important;
+    transition: .5s all ease !important;
+    color: white !important;
+}
+
 .badge-color-travel {
     background-color: rgba(16, 160, 176, 0.85) !important;
     padding-left: 20px !important;
@@ -395,6 +409,12 @@ section .section-title {
 }
 
 .badge-color-blog {
+    background-color: rgba(19, 125, 58, 0.85) !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.badge-color-projects {
     background-color: rgba(19, 125, 58, 0.85) !important;
     padding-left: 20px !important;
     padding-right: 20px !important;
@@ -823,3 +843,11 @@ h3 i {
     margin-bottom: 5px;
 }
 
+/* Projects */
+.cover-img {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}

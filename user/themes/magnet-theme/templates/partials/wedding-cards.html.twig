@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row">
-    {% for p in page.find('/hochzeitsvideos').children if p != page %}
+    {% for p in page.find('/projects').children if p != page %}
             {% if not p.routable %}
                 {% set help = 0 %}
                 <div class="col-sm-12 col-md-6" style="margin-bottom: 30px">
@@ -19,7 +19,7 @@
                         {% elseif p.media['cover.PNG'] is not null %}
                             {% set image = 'cover.PNG' %}
                         {% endif %}
-                        <img class="card-img-top"
+                        <img class="cover-img"
                              src="{{ p.media[image].url }}"
                              alt="Card image cap">
                         <div class="card-body">

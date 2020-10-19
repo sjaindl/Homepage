@@ -18,6 +18,10 @@
     {% set headerImage = 'reisen.jpeg' %}
     {% set headerText = '{{ config.site.metadata.zeitrafferHeader }}' %}
     {% set headerPageName = 'zeitraffer' %}
+{% elseif page.header.header_id == 'projects' %}
+    {% set headerImage = '{{ config.site.metadata.projectsImage }}' %}
+    {% set headerText = '{{ config.site.metadata.projectsHeader }}' %}
+    {% set headerPageName = 'projects' %}
 {% endif %}
 
 <div id="header-move" class="hidden"
@@ -29,11 +33,20 @@
                     <div class="col-xs-12 col-sm-12 col-md-12 mt-2 ">
                         <ul class="list-unstyled list-inline social text-center">
 
-                            <li class="list-inline-item"><a
-                                class="circle resume {% if page.header.header_id == 'home' %} resume-active {% endif %}"
+                            <li class="list-inline-item">
+                                <a class="circle resume {% if page.header.header_id == 'home' %} resume-active {% endif %}"
                                 href="{{ base_url_absolute }}" data-toggle="tooltip" data-placement="top"
-                                title="resume"><i
-                                    class="fas fa-file"></i></a>
+                                title="resume">
+                                <i class="fas fa-file"></i>
+                                </a>
+                            </li>
+
+                            <li class="list-inline-item">
+                                <a  class="circle-move projects {% if page.header.header_id == 'projects' %} projects-active {% endif %}"
+                                    href="{{ base_url_absolute }}/projects" data-toggle="tooltip" data-placement="bottom"
+                                    title="projects">
+                                    <i class="fa fa-heart"></i>
+                                </a>
                             </li>
 
                             <li class="list-inline-item">
@@ -42,18 +55,13 @@
                                    data-placement="bottom" title="blog">
                                    <i class="fas fa-blog"></i></a>
                             </li>
-
-                            <li class="list-inline-item"><a
-                                        class="circle-move timelapse {% if page.header.header_id == 'zr' %} timelapse-active {% endif %}"
-                                        href="{{ base_url_absolute }}/zeitraffer" data-toggle="tooltip" data-placement="bottom"
-                                        title="zeitraffer"><i
-                                            class="fas fa-video"></i></a>
-                            </li>
-                            <li class="list-inline-item"><a
-                                class="circle travel {% if page.header.header_id == 'travel' %}  travel-active {% endif %}"
+                            
+                            <li class="list-inline-item">
+                                <a class="circle travel {% if page.header.header_id == 'travel' %}  travel-active {% endif %}"
                                 href="{{ base_url_absolute }}/reisen" data-toggle="tooltip" data-placement="top"
-                                title="abenteuer"><i
-                                    class="fas fa-plane"></i></a>
+                                title="abenteuer">
+                                <i class="fas fa-plane"></i>
+                                </a>
                             </li>
                         </ul>
                     </div>
