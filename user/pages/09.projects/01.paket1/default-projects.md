@@ -8,7 +8,7 @@ Travel Companion is an iOS app I developped from 2018 - 2019 inspired by my pass
 
 Travel Companion's goal is to let explore, plan and remember travels. It has an integrated sign-in mechanism with either Facebook, Google, Apple, or email. This allows data synchronization over all your different devices. Here's a short demo video of the app:
 
-<iframe width="375" height="500" style="display:block; margin: 0 auto;" src="https://www.youtube.com/embed/IEebsEjLKN8" frameborder="0" allowfullscreen></iframe>
+<iframe style="display:block; margin: 0 auto;" src="https://www.youtube.com/embed/IEebsEjLKN8" frameborder="0" allowfullscreen></iframe>
 <br>
 
 Within the app CoreData and Firebase Cloud Firestore are used for data persistence as well as various API's (Google Maps, Google Places, Google Geocoding API, Firebase Authentication, Firebase Storage, Firebase Analytics, Firebase Crashlytics, flickR API, Rome2Rio and restcountries.eu).
