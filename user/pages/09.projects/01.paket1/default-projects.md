@@ -4,7 +4,7 @@ media_order: cover.JPG
 routable: false
 ---
 
-Travel Companion is an iOS app I developped from 2018 - 2019 inspired by my passion for travelling, which is available on the Apple Store.
+Travel Companion is an iOS app I developed from 2018 - 2019 inspired by my passion for travelling, which is available on the Apple Store.
 
 Travel Companion's goal is to let explore, plan and remember travels. It has an integrated sign-in mechanism with either Facebook, Google, Apple, or email. This allows data synchronization over all your different devices. Here's a short demo video of the app:
 
