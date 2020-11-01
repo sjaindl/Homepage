@@ -6,18 +6,10 @@
     {% set headerImage = 'reisen.jpeg' %}
     {% set headerText = '{{ config.site.metadata.abenteuerHeader }}' %}
     {% set headerPageName = 'abenteuer' %}
-    {% elseif page.header.header_id == 'hochzeit' %}
-    {% set headerImage = 'hochzeitsvideos.jpeg' %}
-    {% set headerText = '{{ config.site.metadata.hochzeitHeader }}' %}
-    {% set headerPageName = 'hochzeitsvideo' %}
 {% elseif page.header.header_id == 'blog' %}
     {% set headerImage = 'blog.jpeg' %}
     {% set headerText = '{{ config.site.metadata.blogHeader }}' %}
     {% set headerPageName = 'blog' %}
-{% elseif page.header.header_id == 'zr' %}
-    {% set headerImage = 'reisen.jpeg' %}
-    {% set headerText = '{{ config.site.metadata.zeitrafferHeader }}' %}
-    {% set headerPageName = 'zeitraffer' %}
 {% elseif page.header.header_id == 'projects' %}
     {% set headerImage = '{{ config.site.metadata.projectsImage }}' %}
     {% set headerText = '{{ config.site.metadata.projectsHeader }}' %}
