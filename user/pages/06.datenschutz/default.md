@@ -41,14 +41,10 @@ Diese Webseite verwendet das Produkt Google Maps von Google Inc. Durch Nutzung d
 Ihnen stehen grundsätzlich die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerruf und Widerspruch zu. Wenn Sie glauben, dass die Verarbeitung Ihrer Daten gegen das Datenschutzrecht verstößt oder Ihre datenschutzrechtlichen Ansprüche sonst in einer Weise verletzt worden sind, können Sie sich bei der Aufsichtsbehörde beschweren. In Österreich ist dies die Datenschutzbehörde.
 ##Sie erreichen uns unter folgenden Kontaktdaten:
 
-HochzeitVideo.at
+Stefan Jaindl
 
-Walter Magnet
+Lilienthalstraße 9
 
-Parkweg 9/8
+A-9020 Klagenfurt
 
-A-9400 Wolfsberg
-
-0664 38 67 173
-
-Stand: Juli 2018
+Stand: November 2020
