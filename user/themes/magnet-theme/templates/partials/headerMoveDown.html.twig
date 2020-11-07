@@ -1,13 +1,12 @@
-{% if page.header.header_id == 'home' %}
-    {% set headerImage = 'resume.jpeg' %}
-    {% set headerText = '{{ config.site.metadata.resumeHeader }}' %}
-    {% set headerPageName = 'home' %}
-{% elseif page.header.header_id == 'travel' %}
-    {% set headerImage = 'reisen.jpeg' %}
+{% set headerImage = '{{ config.site.metadata.resumeImage }}' %}
+{% set headerText = '{{ config.site.metadata.resumeHeader }}' %}
+{% set headerPageName = 'home' %}
+{% if page.header.header_id == 'travel' %}
+    {% set headerImage = '{{ config.site.metadata.abenteuerImage }}' %}
     {% set headerText = '{{ config.site.metadata.abenteuerHeader }}' %}
     {% set headerPageName = 'abenteuer' %}
 {% elseif page.header.header_id == 'blog' %}
-    {% set headerImage = 'blog.jpeg' %}
+    {% set headerImage = '{{ config.site.metadata.blogImage }}' %}
     {% set headerText = '{{ config.site.metadata.blogHeader }}' %}
     {% set headerPageName = 'blog' %}
 {% elseif page.header.header_id == 'projects' %}
