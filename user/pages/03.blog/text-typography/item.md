@@ -14,6 +14,7 @@ hero_classes: 'text-light title-h1h2 overlay-dark hero-large parallax'
 hero_image: unsplash-text.jpg
 show_sidebar: true
 header_id: blog
+badge_class: badge-color-blog
 ---
 
 The [Quark theme](https://github.com/getgrav/grav-theme-quark) is the new default theme for Grav built with [Spectre.css](https://picturepan2.github.io/spectre/) the lightweight, responsive and modern CSS framework. Spectre provides  basic styles for typography, elements, and a responsive layout system that utilizes best practices and consistent language design.

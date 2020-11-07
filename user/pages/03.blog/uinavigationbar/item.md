@@ -19,6 +19,7 @@ show_breadcrumbs: true
 show_pagination: true
 subtitle: 'finding beauty in structure'
 header_id: blog
+badge_class: badge-color-blog
 ---
 
 When working on iOS apps, an important topic for every developer is UIKit (and of course increasingly SwiftUI in the future). 

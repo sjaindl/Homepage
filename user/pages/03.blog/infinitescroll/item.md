@@ -19,6 +19,7 @@ show_breadcrumbs: true
 show_pagination: true
 subtitle: 'finding beauty in structure'
 header_id: blog
+badge_class: badge-color-blog
 ---
 
 I have worked once on a ViewController that should support drag & drop of a child ViewController with a certain amount of fixed sheet states.

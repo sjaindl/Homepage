@@ -16,6 +16,7 @@ hero_classes: 'text-light title-h1h2 overlay-dark-gradient hero-large parallax'
 hero_image: tc.gif
 show_sidebar: true
 header_id: blog
+badge_class: badge-color-blog
 ---
 
 The first things I thought about before implementing the app have been:

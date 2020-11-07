@@ -19,6 +19,7 @@ show_breadcrumbs: true
 show_pagination: true
 subtitle: 'finding beauty in structure'
 header_id: blog
+badge_class: badge-color-blog
 ---
 
 An important topic for an iOS app may be to use a consistent theming across the whole UI.

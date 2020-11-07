@@ -19,6 +19,7 @@ show_breadcrumbs: true
 show_pagination: true
 subtitle: 'finding beauty in structure'
 header_id: blog
+badge_class: badge-color-blog
 ---
 
 This blog post illustrates how deep linking into an iOS app works.

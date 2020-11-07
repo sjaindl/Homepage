@@ -19,6 +19,7 @@ show_breadcrumbs: true
 show_pagination: true
 subtitle: 'finding beauty in structure'
 header_id: blog
+badge_class: badge-color-blog
 ---
 
 GraphQL is a query language for APIs that provides a complete description of the data used in an API. More details can be found on https://graphql.org/.

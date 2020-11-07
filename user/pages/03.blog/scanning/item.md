@@ -19,6 +19,7 @@ show_breadcrumbs: true
 show_pagination: true
 subtitle: 'finding beauty in structure'
 header_id: blog
+badge_class: badge-color-blog
 ---
 
 The AVFoundation framework offers a pretty good way to scan codes with the device camera, such as qr codes or barcodes.

@@ -10,6 +10,7 @@ taxonomy:
 feed:
     limit: 10
 header_id: blog
+badge_class: badge-color-blog
 ---
 
 This article is part 2 of my  UIKit Cheatsheet series. It deals with tricks for UITableView.

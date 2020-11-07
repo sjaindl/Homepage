@@ -19,6 +19,7 @@ show_breadcrumbs: true
 show_pagination: true
 subtitle: 'finding beauty in structure'
 header_id: blog
+badge_class: badge-color-blog
 ---
 
 I have once implemented a complete feature flag architecture for an iOS app. Such an architecture is important to switch features on or off, even remotely so that no new build is required. This blog post describes how the architecture was implemented.

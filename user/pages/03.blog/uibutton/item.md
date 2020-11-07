@@ -13,6 +13,7 @@ feed:
 continue_link: true
 link: 'http://daringfireball.net'
 header_id: blog
+badge_class: badge-color-blog
 ---
 
 This article is part 3 of my UIKit Cheatsheet series. It deals with tricks for UIButton.

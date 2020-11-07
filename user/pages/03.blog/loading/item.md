@@ -14,6 +14,7 @@ hero_classes: 'text-light title-h1h2 overlay-dark-gradient hero-large parallax'
 hero_image: unsplash-sidney-perry.jpg
 show_sidebar: true
 header_id: blog
+badge_class: badge-color-blog
 ---
 
 This article is part 7 of my UIKit Cheatsheet series. It deals with loading indicators.
