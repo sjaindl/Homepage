@@ -16,20 +16,15 @@ metadata:
   street: 'Lilienthalstraße 9'
   zip: '9020'
   city: Klagenfurt
-  resumeHeader: 'Herzlich Willkommen auf meiner Webseite! <br> Hier finden Sie eine Sammlung meiner Projekte, Blogposts und Reisen'
+  resumeHeader: 'Welcome on my homepage! <br> Check out my pages: <br> <b> Resume - Projects - Blog - Travel </b>'
   abenteuerHeader: 'The world is a book and those who do not travel read only a page'
-  blogHeader: 'Hilfreiche Blogposts zu unterschiedlichsten Themen aus dem Softwareentwickler-Alltag'
-  hochzeitHeader: 'Der glanzvollste Moment in Ihrem Leben, wir halten diesen mit Fotos und Videos fest'
-  zeitrafferHeader: 'Zeitraffer-Aufnahmen lassen die Zeit wie im Flug vergehen, als drehte sich die Welt plötzlich schneller.'
-  projectsHeader: 'Überblick über meine persönlichen Projekte aus Android, iOS, Web Development und Datenstrukturen & Algorithmen.'
+  blogHeader: 'Checkout blog posts about various topics helpful to software developers everyday life'
+  projectsHeader: 'Overview over my personal projects with Android, iOS, Web Development and Data Structures & Algorithms'
   resumeImage: images/header-mask/header-mask-resume.jpeg
   meImage: images/header-mask/header-mask-resume-me.jpeg
   abenteuerImage: images/header-mask/header-mask-reisen.jpeg
-  hochzeitImage: images/header-mask/header-mask-hochzeitsvideos.jpeg
   blogImage: images/header-mask/header-mask-blog.jpeg
-  zeitrafferImage: images/header-mask/header-mask-zeitraffer.jpeg
   projectsImage: images/header-mask/header-mask-projects.jpeg
-  iconHochzeit: images/misc/icon_rings.svg
 summary:
   enabled: true
   format: short
@@ -52,4 +47,4 @@ contact:
   -
     line: jaindl.stefan@gmail.com
   -
-    line: '+43664/1554623'
+    line: '+43664/15 54 623'

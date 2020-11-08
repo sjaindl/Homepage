@@ -5,7 +5,6 @@ published: true
 body_classes: 'title-center title-h1h2'
 badge_class: badge-color-travel
 header_id: travel
-homeTitle: Länderübersicht
-homeSubtitle: 'Reisen ist Leben und Leben ist Reisen'
+homeTitle: Country Overview
+homeSubtitle: 'Travelling is life and life is travelling'
 ---
-

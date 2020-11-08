@@ -5,8 +5,8 @@
     {{ page.content }}
 
     {#
-    <section class="linkbar-wedding-section">
-        <div class="container mosaic-header linkbar-wedding-container">
+    <section class="linkbar-projects-section">
+        <div class="container mosaic-header linkbar-projects-container">
             
             <h2 class="mosaic-title">{{ page.header.pagetitle }}</h2>
             <p class="mosaic-subtitle">{{ page.header.pagesubtitle }}</p>
@@ -14,28 +14,29 @@
             <ul class="list-group">
                 <li class="list-group-item">
                     <i class="fas fa-phone-volume circle-items weeding"></i><span
-                            class="linkbar-wedding">{{ config.site.metadata.telephone }}</span>
+                            class="linkbar-projects">{{ config.site.metadata.telephone }}</span>
                 </li>
                 <li class="list-group-item">
-                    <a class="linkbar-wedding-a" href="mailto:{{ config.site.author.email }}">
-                        <i class="far fa-envelope circle-items weeding"></i><span class="linkbar-wedding">{{ config.site.author.email }}</span>
+                    <a class="linkbar-projects-a" href="mailto:{{ config.site.author.email }}">
+                        <i class="far fa-envelope circle-items weeding"></i><span class="linkbar-projects">{{ config.site.author.email }}</span>
                     </a>
                 </li>
                 <li class="list-group-item">
-                    <a class="linkbar-wedding-a" href="{{ page.header.hochzeitvideolink }}">
-                        <i class="fas fa-home circle-items weeding"></i><span class="linkbar-wedding">{{ config.site.metadata.homepage }}</span>
+                    <a class="linkbar-projects-a" href="{{ page.header.hochzeitvideolink }}">
+                        <i class="fas fa-home circle-items weeding"></i><span class="linkbar-projects">{{ config.site.metadata.homepage }}</span>
                     </a>
                 </li>
             </ul>
             
         </div>
     </section>
-    #}
+    
 
     <div class="container mosaic-header">
         <h2 class="mosaic-title">{{ page.header.hochzeitPaketeTitle }}</h2>
         <p class="mosaic-subtitle">{{ page.header.hochzeitPaketeSubtitle }}</p>
     </div>
+    #}
     {% include 'partials/project-cards.html.twig' %}
     {#{% include 'partials/carousel.html.twig' %}#}
     {#{% include 'partials/carousel-slick.html.twig' with {'ort': 'Japan'} %}#}

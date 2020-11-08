@@ -396,18 +396,6 @@ section .section-title {
     padding-right: 20px !important;
 }
 
-.badge-color-weeding {
-    background-color: rgba(176, 31, 63, 0.81) !important;
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-}
-
-.badge-color-zeitraffer {
-    background-color: rgba(19, 125, 58, 0.85) !important;
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-}
-
 .badge-color-blog {
     background-color: rgba(19, 125, 58, 0.85) !important;
     padding-left: 20px !important;
@@ -734,15 +722,15 @@ h3 i {
 }
 
 /*---------------------------------------------------*/
-/*Linkbar Wedding CSS*/
+/*Linkbar Projects CSS*/
 /*---------------------------------------------------*/
-.linkbar-wedding-section {
+.linkbar-projects-section {
     background-color: #f9f9f9;
     padding-top: 30px !important;
     padding-bottom: 30px !important;
 }
 
-.linkbar-wedding-container {
+.linkbar-projects-container {
     width: 350px !important;
     max-width: 100%;
     background-color: #e8e8e8;
@@ -752,7 +740,7 @@ h3 i {
 }
 
 @media screen and (max-width: 786px) {
-    .linkbar-wedding-container {
+    .linkbar-projects-container {
         width: 350px !important;
         max-width: 100%;
         background-color: #e8e8e8;
@@ -762,19 +750,19 @@ h3 i {
     }
 }
 
-.linkbar-wedding-container ul {
+.linkbar-projects-container ul {
     padding-top: 20px;
 }
 
-.linkbar-wedding-container ul li {
+.linkbar-projects-container ul li {
     background-color: #e8e8e8;
 }
 
-.linkbar-wedding {
+.linkbar-projects {
     margin-left: 10px;
 }
 
-.linkbar-wedding-a {
+.linkbar-projects-a {
     color: #000;
 }
 
