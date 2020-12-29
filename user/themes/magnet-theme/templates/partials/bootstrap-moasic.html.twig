@@ -4,7 +4,7 @@
             {% for p in pages.children %}
                 {% for pp in p.children %}
                     {% if (loop.index0 % 3) == 0 %}
-                        <a href="/homepage/reisen/{{ pp.header.sublink|lower|url_encode }}">
+                        <a href="/reisen/{{ pp.header.sublink|lower|url_encode }}">
                             <div class="view overlay">
                                 {% set imagelink = pp.header.sublink|lower|url_encode ~ '.jpg' %}
 
@@ -36,7 +36,7 @@
             {% for p in pages.children %}
                 {% for pp in p.children %}
                     {% if (loop.index0 % 3) == 1 %}
-                        <a href="/homepage/reisen/{{ pp.header.sublink|lower|url_encode }}">
+                        <a href="/reisen/{{ pp.header.sublink|lower|url_encode }}">
                         {# <a href="#{{ pp.title|camelize }}"> #}
                             <div class="view overlay">
 
@@ -69,7 +69,7 @@
             {% for p in pages.children %}
                 {% for pp in p.children %}
                     {% if (loop.index0 % 3) == 2 %}
-                        <a href="/homepage/reisen/{{ pp.header.sublink|lower|url_encode }}">
+                        <a href="/reisen/{{ pp.header.sublink|lower|url_encode }}">
                         {# <a href="#{{ pp.title|camelize }}"> #}
                             <div class=" view overlay">
 

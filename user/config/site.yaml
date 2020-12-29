@@ -12,7 +12,7 @@ routes:
 
 metadata:
   telephone: +43664/1554623
-  homepage: www.stefanjaindl.at
+  homepage: www.stefan-jaindl.com
   street: 'Lilienthalstraße 9'
   zip: '9020'
   city: Klagenfurt
@@ -35,7 +35,7 @@ routes: null
 blog:
   route: /blog
 description: 'Software Engineer'
-website: stefanjaindl.at
+website: www.stefan-jaindl.com
 address:
   -
     line: 'Lilienthalstraße 9'
