@@ -8,8 +8,8 @@ taxonomy:
 theme: magnet-theme
 ---
 
-Herzlich Willkommen auf meiner Webseite!
+Welcome on my personal Website!
 
-Hier findest du meinen Lebenslauf, eine Übersicht über meine persönlichen Projekte, hilfreiche Blogposts zu unterschiedlichsten Themen aus dem Softwareentwickler-Alltag und Schnappschüsse aus meinen Reisen rund um die Welt.
+Here you can find my resume, an overview over my personal projects, helpful blog posts about diverse topics from a software developer's everyday work and impressions about my travels around the world.
 
 Enjoy :)
