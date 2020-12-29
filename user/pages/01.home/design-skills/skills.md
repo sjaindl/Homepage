@@ -24,13 +24,13 @@ column1:
         level: 6
     -
         name: 'Algorithms & Data Structures'
-        level: 6
+        level: 7
     -
         name: 'Web Development'
-        level: 5
+        level: 6
     -
         name: Databases
-        level: 8
+        level: 6
 column2:
     -
         name: Swift
