@@ -9,11 +9,11 @@ header_id: impressum
 
 Stefan Jaindl
 
-Lilienthalstraße 9
+Copacabana 54
 
-9020 Klagenfurt
+A-8401 Kalsdorf bei Graz
 
-Kärnten/Österreich
+Steiermark/Österreich
 
 ---
 

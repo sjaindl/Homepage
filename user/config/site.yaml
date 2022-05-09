@@ -3,19 +3,16 @@ default_lang: de
 author:
   name: 'Stefan Jaindl'
   email: jaindl.stefan@gmail.com
-taxonomies: [category,tag,month]
-redirects:
-    /changelog: /blog/the-urban-jungle
-routes:
-    /something/else: /blog/focus-and-blur
-    /another/one/(.*): /blog/$1
-
+taxonomies:
+  - category
+  - tag
+  - month
 metadata:
-  telephone: +43664/1554623
+  telephone: '+436641554623'
   homepage: www.stefan-jaindl.com
-  street: 'Lilienthalstraße 9'
-  zip: '9020'
-  city: Klagenfurt
+  street: 'Copacabana 54'
+  zip: '8401'
+  city: 'Kalsdorf bei Graz'
   resumeHeader: 'Welcome on my homepage! <br> Check out my pages: <br> <b> Resume - Projects - Blog - Travel </b>'
   abenteuerHeader: 'The world is a book and those who do not travel read only a page'
   blogHeader: 'Checkout blog posts about various topics helpful to software developers everyday life'
@@ -30,19 +27,22 @@ summary:
   format: short
   size: 300
   delimiter: '==='
-redirects: null
-routes: null
+redirects:
+  /changelog: /blog/the-urban-jungle
+routes:
+  /something/else: /blog/focus-and-blur
+  '/another/one/(.*)': /blog/$1
 blog:
   route: /blog
 description: 'Software Engineer'
 website: www.stefan-jaindl.com
 address:
   -
-    line: 'Lilienthalstraße 9'
+    line: 'Copacabana 54'
   -
-    line: '9020 Klagenfurt'
+    line: '8401 Kalsdorf'
   -
-    line: 'Austria'
+    line: Austria
 contact:
   -
     line: jaindl.stefan@gmail.com

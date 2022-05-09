@@ -43,8 +43,8 @@ Ihnen stehen grundsätzlich die Rechte auf Auskunft, Berichtigung, Löschung, Ei
 
 Stefan Jaindl
 
-Lilienthalstraße 9
+Copacabana 54
 
-A-9020 Klagenfurt
+A-8401 Kalsdorf bei Graz
 
-Stand: November 2020
+Stand: Mai 2022
